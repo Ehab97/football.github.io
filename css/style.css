@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic,latin-ext");
+body {
+  background-color: #d9d9d9;
+  font-family: "Cairo", fs;
+  direction: rtl; }
+
+@media screen and (max-width: 590px) {
+  .container {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

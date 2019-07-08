@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic,latin-ext");
+body {
+  background-color: #d9d9d9;
+  font-family: "Cairo", fs;
+  direction: rtl;
+}
+
+@media screen and (max-width: 590px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.bg-dark {
+  background: #181817 !important;
+}
+
+.bg-dark .nav-item .nav-link {
+  color: #737372;
+}
+
+.bg-dark .nav-item .nav-link:hover {
+  color: #fff;
+  transition: .3s ease-in;
+}
+
+.heading {
+  margin: 40px auto;
+}
+
+.heading h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.heading hr {
+  border: 2px solid #181817;
+}
+
+@media screen and (max-width: 590px) {
+  .heading hr {
+    width: 80%;
+    float: left;
+  }
+}
+
+.images .row {
+  margin: 25px 0;
+}
+
+.images .col-md-3 {
+  padding: 0;
+}
+
+.images a img {
+  width: calc(100%);
+  height: calc(100%);
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 590px) {
+  .images .col-md-3 {
+    padding: 0 15px 0 15px;
+    margin: 20px 0;
+  }
+}

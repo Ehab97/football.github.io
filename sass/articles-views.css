@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic,latin-ext");
+body {
+  background-color: #d9d9d9;
+  font-family: "Cairo", fs;
+  direction: rtl;
+}
+
+@media screen and (max-width: 590px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.bg-dark {
+  background: #181817 !important;
+}
+
+.bg-dark .nav-item .nav-link {
+  color: #737372;
+}
+
+.bg-dark .nav-item .nav-link:hover {
+  color: #fff;
+  transition: .3s ease-in;
+}
+
+.heading {
+  margin: 40px auto;
+}
+
+.heading h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.heading hr {
+  border: 2px solid #181817;
+}
+
+@media screen and (max-width: 590px) {
+  .heading hr {
+    width: 80%;
+    float: left;
+  }
+}
+
+.view {
+  margin: 40px auto;
+  background: #fff;
+  padding: 15px 0;
+}
+
+.view h3 {
+  font-size: 2em;
+  line-height: 1.5;
+  margin: 0;
+  margin-right: 25px;
+  color: #000;
+}
+
+.view p {
+  margin-right: 25px;
+  font-size: 1.3em;
+  color: #696969;
+  margin: 10px 0 0;
+  margin-bottom: 15px;
+  margin-right: 25px;
+}
+
+.view .lead {
+  font-size: 16.5px;
+  color: 000000;
+  width: 95%;
+  margin: 30px 20px;
+  line-height: 2;
+}
+
+.view img {
+  width: calc(100%);
+  height: calc(100%);
+}
+
+.view .comment {
+  background: #ededed;
+  width: 95%;
+  margin: 25px 10px;
+  border-radius: 10px;
+  padding: 15px 10px;
+  max-height: 200px;
+}
+
+.view .comment p {
+  font-size: 15px;
+  color: #1b1c1e;
+}
+
+.view .form-group .form-control {
+  color: #1c1e21;
+  /* display: flex; */
+  flex-direction: column;
+  font-size: 13px;
+  width: 95%;
+  margin: 25px 10px;
+  border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid #ededed;
+  font-size: 15px;
+  min-height: 50px;
+}
+
+.view .form-group .btn {
+  margin: 0px 10px;
+  border-radius: 8px;
+  width: calc(100% / 5);
+}
+
+.view hr {
+  border-top: 1px solid #ededed;
+}
+
+@media screen and (max-width: 590px) {
+  .view .lead {
+    width: 90%;
+    font-size: 14.5px;
+    margin: 15px auto;
+  }
+  .view .comment {
+    background: #ededed;
+    width: 95%;
+    margin: 25px auto;
+    border-radius: 10px;
+    padding: 15px 5px;
+    max-height: 200px;
+  }
+  .view .form-group .btn {
+    margin: 0px 10px;
+    border-radius: 8px;
+    width: calc(100% / 4);
+    text-align: center;
+  }
+}

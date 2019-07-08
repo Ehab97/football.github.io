@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'mixins';
+//body
+@include body;
+.bg-dark {
+    @include navbar;
+}
+
+.heading {
+    @include heading;
+}
+
+.view {
+    @include view;
+}
