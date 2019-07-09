@@ -29,6 +29,11 @@ document.addEventListener("DOMContentLoaded", function() {
         $('.imagepreview').attr('src', $(this).find('img').attr('src'));
         $('#imagemodal').modal('show');
     });
+    $('#overlay').modal('show');
+
+setTimeout(function() {
+    $('#overlay').modal('hide');
+}, 15000);
     ChangeTapColor();
 
 });
