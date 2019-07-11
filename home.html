@@ -17,676 +17,857 @@
 </head>
 
 <body class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" style="color:#fff;" href="#">الاسم</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <main id="app">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="icon-bar" @click="icons =! icons;">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <a class="navbar-brand" href="home.html">KSAKORA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" style="color:#fff;" href="home.html">الرئيسيه</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="news.html">الاخبار</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="articles.html">المقالات</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">البطولات</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="images.html">الصور</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="videos.html">الفيديوهات</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">تسجيل الدخول</a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:#fff;" href="home.html">الرئيسيه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">الاخبار</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articles.html">المقالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="images.html">الصور</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="videos.html">الفيديوهات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="videos.html">الاعلان</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="videos.html">التواصل معنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">تسجيل الدخول <i class="fa fa-user-circle-o ml-2"></i></a>
+                    </li>
 
-            </ul>
-        </div>
-
-
-    </nav>
-    <div class="slider">
-        <div class="row">
-            <div class="col-12">
-                <div class="bd-example">
-                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner text-center">
-                            <div class="carousel-item active">
-                                <a href="#">
-                                    <img src="imgaes/news/new.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>فرانكي دي يونج الي برسا</h5>
-                                        <p>انتقل فرانكي دي يونج الي البارس و زز.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="#">
-                                    <img src="imgaes/news/new1.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>اخبار عن اقترابا بطل العالم من البارسا</h5>
-                                        <p>اقترب انتقاال بطل العالم انطوان جريزمان الى البرسا جيث ...</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="#">
-                                    <img src="imgaes/news/new.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>فرانكي دي يونج الي برسا</h5>
-                                        <p>انتقل فرانكي دي يونج الي البارس و زز.</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
+                </ul>
             </div>
-        </div>
-    </div>
-    <div class="matches" id="app">
-        <div class="row">
-            <div class="col-12">
-                <div class="date">
+
+
+        </nav>
+        <div class="champions" v-show="icons">
+            <div class="row">
+                <div class="col-12">
+                    <h5>البطولات</h5>
                     <ul class="list-unstyled">
-                        <li class="liActive" @click="today=true;tom=false;yaster=false;live=false;"><a href="#" style="color:#212224;">اليوم</a></li>
-                        <li @click="today=false;tom=true;yaster=false;live=false;"><a href="#">غدا</a></li>
-                        <li @click="today=false;tom=false;yaster=true;live=false;"><a href="#">البارحه</a></li>
-                        <li @click="today=false;tom=false;yaster=false;live=true;"><a href="#">مباشر</a></li>
+                        <li><a href="#">اسم البطوله</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="col-12" v-if="today">
-                <div class="row">
-                    <div class="col-md-4 col-xs-12 text-center m-auto">
-                        <div class="top">
-                            <h4>البطوله</h4>
-                        </div>
-                        <div class="center">
-                            <div class="d-flex flex-nowrap">
-                                <div class="order-3 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
-                                <div class="order-2 p-2">
-                                    <p class="badge badge-secondary">- : -</p>
+        </div>
+        <div class="banner">
+            <a href="#">
+                <img src="imgaes/bg/b.jpg" alt="">
+            </a>
+        </div>
+        <div class="slider">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bd-example">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner text-center">
+                                <div class="carousel-item active">
+                                    <a href="#">
+                                        <img src="imgaes/news/new.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>فرانكي دي يونج الي برسا</h5>
+                                            <p>انتقل فرانكي دي يونج الي البارس و زز.</p>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="order-1 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <span class="badge badge-secondary">بعد قليل</span>
-                            <p>22:45</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 text-center m-auto">
-                        <div class="top">
-                            <h4>البطوله</h4>
-                        </div>
-                        <div class="center">
-                            <div class="d-flex flex-nowrap">
-                                <div class="order-3 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
-                                <div class="order-2 p-2">
-                                    <p class="badge badge-secondary">- : -</p>
+                                <div class="carousel-item">
+                                    <a href="#">
+                                        <img src="imgaes/news/new1.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>اخبار عن اقترابا بطل العالم من البارسا</h5>
+                                            <p>اقترب انتقاال بطل العالم انطوان جريزمان الى البرسا جيث ...</p>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="order-1 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <span class="badge badge-secondary">الان</span>
-                            <p>22:45</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 text-center m-auto">
-                        <div class="top">
-                            <h4>البطوله</h4>
-                        </div>
-                        <div class="center">
-                            <div class="d-flex flex-nowrap">
-                                <div class="order-3 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
-                                <div class="order-2 p-2">
-                                    <p class="badge badge-secondary">- : -</p>
+                                <div class="carousel-item">
+                                    <a href="#">
+                                        <img src="imgaes/news/new.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>فرانكي دي يونج الي برسا</h5>
+                                            <p>انتقل فرانكي دي يونج الي البارس و زز.</p>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="order-1 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
                             </div>
-                        </div>
-                        <div class="bottom">
-                            <span class="badge badge-secondary">انتهت</span>
-                            <p>90+</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12" v-if="tom">
-                <div class="row">
-                    <div class="col-md-4 col-xs-12 text-center m-auto">
-                        <div class="top">
-                            <h4>البطوله</h4>
-                        </div>
-                        <div class="center">
-                            <div class="d-flex flex-nowrap">
-                                <div class="order-3 p-2"><img src="imgaes/favicon/fra.png" alt="germany"></div>
-                                <div class="order-2 p-2">
-                                    <p class="badge badge-secondary">- : -</p>
-                                </div>
-                                <div class="order-1 p-2"><img src="imgaes/favicon/fra.png" alt="germany"></div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <span class="badge badge-secondary">بعد قليل</span>
-                            <p>22:45</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 text-center m-auto">
-                        <div class="top">
-                            <h4>البطوله</h4>
-                        </div>
-                        <div class="center">
-                            <div class="d-flex flex-nowrap">
-                                <div class="order-3 p-2"><img src="imgaes/favicon/fra.png" alt="germany"></div>
-                                <div class="order-2 p-2">
-                                    <p class="badge badge-secondary">- : -</p>
-                                </div>
-                                <div class="order-1 p-2"><img src="imgaes/favicon/fra.png" alt="germany"></div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <span class="badge badge-secondary">الان</span>
-                            <p>22:45</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 text-center m-auto">
-                        <div class="top">
-                            <h4>البطوله</h4>
-                        </div>
-                        <div class="center">
-                            <div class="d-flex flex-nowrap">
-                                <div class="order-3 p-2"><img src="imgaes/favicon/fra.png" alt="germany"></div>
-                                <div class="order-2 p-2">
-                                    <p class="badge badge-secondary">- : -</p>
-                                </div>
-                                <div class="order-1 p-2"><img src="imgaes/favicon/fra.png" alt="germany"></div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <span class="badge badge-secondary">انتهت</span>
-                            <p>90+</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12" v-if="yaster">
-                <div class="row">
-                    <div class="col-md-4 col-xs-12 text-center m-auto">
-                        <div class="top">
-                            <h4>البطوله</h4>
-                        </div>
-                        <div class="center">
-                            <div class="d-flex flex-nowrap">
-                                <div class="order-3 p-2"><img src="imgaes/favicon/it.png" alt="germany"></div>
-                                <div class="order-2 p-2">
-                                    <p class="badge badge-secondary">- : -</p>
-                                </div>
-                                <div class="order-1 p-2"><img src="imgaes/favicon/it.png" alt="germany"></div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <span class="badge badge-secondary">بعد قليل</span>
-                            <p>22:45</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 text-center m-auto">
-                        <div class="top">
-                            <h4>البطوله</h4>
-                        </div>
-                        <div class="center">
-                            <div class="d-flex flex-nowrap">
-                                <div class="order-3 p-2"><img src="imgaes/favicon/it.png" alt="germany"></div>
-                                <div class="order-2 p-2">
-                                    <p class="badge badge-secondary">- : -</p>
-                                </div>
-                                <div class="order-1 p-2"><img src="imgaes/favicon/it.png" alt="germany"></div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <span class="badge badge-secondary">الان</span>
-                            <p>22:45</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 text-center m-auto">
-                        <div class="top">
-                            <h4>البطوله</h4>
-                        </div>
-                        <div class="center">
-                            <div class="d-flex flex-nowrap">
-                                <div class="order-3 p-2"><img src="imgaes/favicon/it.png" alt="germany"></div>
-                                <div class="order-2 p-2">
-                                    <p class="badge badge-secondary">- : -</p>
-                                </div>
-                                <div class="order-1 p-2"><img src="imgaes/favicon/it.png" alt="germany"></div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <span class="badge badge-secondary">انتهت</span>
-                            <p>90+</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12" v-if="live">
-                <div class="row">
-                    <div class="col-md-4 col-xs-12 text-center m-auto">
-                        <div class="top">
-                            <h4>البطوله</h4>
-                        </div>
-                        <div class="center">
-                            <div class="d-flex flex-nowrap">
-                                <div class="order-3 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
-                                <div class="order-2 p-2">
-                                    <p class="badge badge-secondary">- : -</p>
-                                </div>
-                                <div class="order-1 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <span class="badge badge-secondary">الان</span>
-                            <p>80+</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 text-center m-auto">
-                        <div class="top">
-                            <h4>البطوله</h4>
-                        </div>
-                        <div class="center">
-                            <div class="d-flex flex-nowrap">
-                                <div class="order-3 p-2"><img src="imgaes/favicon/po.png" alt="germany"></div>
-                                <div class="order-2 p-2">
-                                    <p class="badge badge-secondary">- : -</p>
-                                </div>
-                                <div class="order-1 p-2"><img src="imgaes/favicon/po.png" alt="germany"></div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <span class="badge badge-secondary">الان</span>
-                            <p>80+</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 text-center m-auto">
-                        <div class="top">
-                            <h4>البطوله</h4>
-                        </div>
-                        <div class="center">
-                            <div class="d-flex flex-nowrap">
-                                <div class="order-3 p-2"><img src="imgaes/favicon/po.png" alt="germany"></div>
-                                <div class="order-2 p-2">
-                                    <p class="badge badge-secondary">- : -</p>
-                                </div>
-                                <div class="order-1 p-2"><img src="imgaes/favicon/po.png" alt="germany"></div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <span class="badge badge-secondary">الان</span>
-                            <p>80+</p>
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="line">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h4>البطولات</h4>
+        <div class="matches">
+            <div class="row">
+                <div class="col-12">
+                    <div class="date">
+                        <ul class="list-unstyled">
+                            <li class="liActive" @click="today=true;tom=false;yaster=false;live=false;"><a href="#" style="color:#212224;">اليوم</a></li>
+                            <li @click="today=false;tom=true;yaster=false;live=false;"><a href="#">غدا</a></li>
+                            <li @click="today=false;tom=false;yaster=true;live=false;"><a href="#">البارحه</a></li>
+                            <li @click="today=false;tom=false;yaster=false;live=true;"><a href="#">مباشر</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12" v-if="today">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12 text-center m-auto">
+                            <div class="top">
+                                <h4>البطوله</h4>
+                            </div>
+                            <div class="center">
+                                <div class="d-flex flex-nowrap">
+                                    <div class="order-3 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
+                                    <div class="order-2 p-2">
+                                        <p class="badge badge-secondary">- : -</p>
+                                    </div>
+                                    <div class="order-1 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <span class="badge badge-secondary">بعد قليل</span>
+                                <p>22:45</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 text-center m-auto">
+                            <div class="top">
+                                <h4>البطوله</h4>
+                            </div>
+                            <div class="center">
+                                <div class="d-flex flex-nowrap">
+                                    <div class="order-3 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
+                                    <div class="order-2 p-2">
+                                        <p class="badge badge-secondary">- : -</p>
+                                    </div>
+                                    <div class="order-1 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <span class="badge badge-secondary">الان</span>
+                                <p>22:45</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 text-center m-auto">
+                            <div class="top">
+                                <h4>البطوله</h4>
+                            </div>
+                            <div class="center">
+                                <div class="d-flex flex-nowrap">
+                                    <div class="order-3 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
+                                    <div class="order-2 p-2">
+                                        <p class="badge badge-secondary">- : -</p>
+                                    </div>
+                                    <div class="order-1 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <span class="badge badge-secondary">انتهت</span>
+                                <p>90+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" v-if="tom">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12 text-center m-auto">
+                            <div class="top">
+                                <h4>البطوله</h4>
+                            </div>
+                            <div class="center">
+                                <div class="d-flex flex-nowrap">
+                                    <div class="order-3 p-2"><img src="imgaes/favicon/fra.png" alt="germany"></div>
+                                    <div class="order-2 p-2">
+                                        <p class="badge badge-secondary">- : -</p>
+                                    </div>
+                                    <div class="order-1 p-2"><img src="imgaes/favicon/fra.png" alt="germany"></div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <span class="badge badge-secondary">بعد قليل</span>
+                                <p>22:45</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 text-center m-auto">
+                            <div class="top">
+                                <h4>البطوله</h4>
+                            </div>
+                            <div class="center">
+                                <div class="d-flex flex-nowrap">
+                                    <div class="order-3 p-2"><img src="imgaes/favicon/fra.png" alt="germany"></div>
+                                    <div class="order-2 p-2">
+                                        <p class="badge badge-secondary">- : -</p>
+                                    </div>
+                                    <div class="order-1 p-2"><img src="imgaes/favicon/fra.png" alt="germany"></div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <span class="badge badge-secondary">الان</span>
+                                <p>22:45</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 text-center m-auto">
+                            <div class="top">
+                                <h4>البطوله</h4>
+                            </div>
+                            <div class="center">
+                                <div class="d-flex flex-nowrap">
+                                    <div class="order-3 p-2"><img src="imgaes/favicon/fra.png" alt="germany"></div>
+                                    <div class="order-2 p-2">
+                                        <p class="badge badge-secondary">- : -</p>
+                                    </div>
+                                    <div class="order-1 p-2"><img src="imgaes/favicon/fra.png" alt="germany"></div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <span class="badge badge-secondary">انتهت</span>
+                                <p>90+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" v-if="yaster">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12 text-center m-auto">
+                            <div class="top">
+                                <h4>البطوله</h4>
+                            </div>
+                            <div class="center">
+                                <div class="d-flex flex-nowrap">
+                                    <div class="order-3 p-2"><img src="imgaes/favicon/it.png" alt="germany"></div>
+                                    <div class="order-2 p-2">
+                                        <p class="badge badge-secondary">- : -</p>
+                                    </div>
+                                    <div class="order-1 p-2"><img src="imgaes/favicon/it.png" alt="germany"></div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <span class="badge badge-secondary">بعد قليل</span>
+                                <p>22:45</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 text-center m-auto">
+                            <div class="top">
+                                <h4>البطوله</h4>
+                            </div>
+                            <div class="center">
+                                <div class="d-flex flex-nowrap">
+                                    <div class="order-3 p-2"><img src="imgaes/favicon/it.png" alt="germany"></div>
+                                    <div class="order-2 p-2">
+                                        <p class="badge badge-secondary">- : -</p>
+                                    </div>
+                                    <div class="order-1 p-2"><img src="imgaes/favicon/it.png" alt="germany"></div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <span class="badge badge-secondary">الان</span>
+                                <p>22:45</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 text-center m-auto">
+                            <div class="top">
+                                <h4>البطوله</h4>
+                            </div>
+                            <div class="center">
+                                <div class="d-flex flex-nowrap">
+                                    <div class="order-3 p-2"><img src="imgaes/favicon/it.png" alt="germany"></div>
+                                    <div class="order-2 p-2">
+                                        <p class="badge badge-secondary">- : -</p>
+                                    </div>
+                                    <div class="order-1 p-2"><img src="imgaes/favicon/it.png" alt="germany"></div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <span class="badge badge-secondary">انتهت</span>
+                                <p>90+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" v-if="live">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12 text-center m-auto">
+                            <div class="top">
+                                <h4>البطوله</h4>
+                            </div>
+                            <div class="center">
+                                <div class="d-flex flex-nowrap">
+                                    <div class="order-3 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
+                                    <div class="order-2 p-2">
+                                        <p class="badge badge-secondary">- : -</p>
+                                    </div>
+                                    <div class="order-1 p-2"><img src="imgaes/favicon/ger.png" alt="germany"></div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <span class="badge badge-secondary">الان</span>
+                                <p>80+</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 text-center m-auto">
+                            <div class="top">
+                                <h4>البطوله</h4>
+                            </div>
+                            <div class="center">
+                                <div class="d-flex flex-nowrap">
+                                    <div class="order-3 p-2"><img src="imgaes/favicon/po.png" alt="germany"></div>
+                                    <div class="order-2 p-2">
+                                        <p class="badge badge-secondary">- : -</p>
+                                    </div>
+                                    <div class="order-1 p-2"><img src="imgaes/favicon/po.png" alt="germany"></div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <span class="badge badge-secondary">الان</span>
+                                <p>80+</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 text-center m-auto">
+                            <div class="top">
+                                <h4>البطوله</h4>
+                            </div>
+                            <div class="center">
+                                <div class="d-flex flex-nowrap">
+                                    <div class="order-3 p-2"><img src="imgaes/favicon/po.png" alt="germany"></div>
+                                    <div class="order-2 p-2">
+                                        <p class="badge badge-secondary">- : -</p>
+                                    </div>
+                                    <div class="order-1 p-2"><img src="imgaes/favicon/po.png" alt="germany"></div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <span class="badge badge-secondary">الان</span>
+                                <p>80+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div class="col-12" style="direction: ltr;">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">السابقه</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">التاليه</a>
-                        </li>
-                    </ul>
-                </nav>
+        <!-- ads -->
+        <div class="ads">
+            <div class="row">
+                <div class="col-12">
+                    <a href="#">
+                        <img src="imgaes/ads/ads1.jpg" alt="ads">
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- ads -->
-    <div class="ads">
+        <!-- cards for deatil -->
+        <div class="cards">
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="news.html">
+                                <h1><span class="badge badge-secondary">الاخبار</span></h1>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="news-view.html" style="text-decoration: none;direction: ltr;">
+                                <div class="card mb-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <img src="imgaes/news/new.jpg" style=" border-radius: 0 ;" class="card-img" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color:#868e96;">انتقال دي نوج</h5>
+                                                <p class="card-text" style="color:#868e96;">صفقه من العيار الثقيل</p>
+                                                <p class="card-text"><small class="text-muted">من خمس دقائث</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="news-view.html" style="text-decoration: none;direction: ltr;">
+                                <div class="card mb-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <img src="imgaes/news/new1.jpg" style=" border-radius: 0 ;" class="card-img" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color:#868e96;">انتقال دي نوج</h5>
+                                                <p class="card-text" style="color:#868e96;">صفقه من العيار الثقيل</p>
+                                                <p class="card-text"><small class="text-muted">من خمس دقائث</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="news-view.html" style="text-decoration: none;direction: ltr;">
+                                <div class="card mb-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <img src="imgaes/news/pep.jpg" style=" border-radius: 0 ;" class="card-img" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color:#868e96;">انتقال دي نوج</h5>
+                                                <p class="card-text" style="color:#868e96;">صفقه من العيار الثقيل</p>
+                                                <p class="card-text"><small class="text-muted">من خمس دقائث</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <div class="ads">
+                                <a href="#">
+                                    <img src="imgaes/ads/ads3.gif" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <a href="videos.html">
+                                <h1><span class="badge badge-secondary">الفيديوهات</span></h1>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <video controls>
+                                            <source src="" type="video/mp4">
+                                            <source src="" type="video/ogg">
+                                          Your browser does not support the video tag.
+                                    </video>
+                                    <div class="header">
+                                        <div class="date">
+                                            <span class="day">12</span>
+                                            <span class="month">محرم</span>
+                                            <span class="year">1440</span>
+                                        </div>
+                                        <ul class="menu-content">
+                                            <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
+                                            <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title text-center" style="font-size: 20px;"><a href="#">انتقال دي يونج للبرسا</a></h1>
+                                            <a href="#" class="button">مشاهدة المزيد</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <video controls>
+                                                <source src="" type="video/mp4">
+                                                <source src="" type="video/ogg">
+                                              Your browser does not support the video tag.
+                                        </video>
+                                    <div class="header">
+                                        <div class="date">
+                                            <span class="day">12</span>
+                                            <span class="month">محرم</span>
+                                            <span class="year">1440</span>
+                                        </div>
+                                        <ul class="menu-content">
+                                            <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
+                                            <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title text-center" style="font-size: 20px;"><a href="#">انتقال دي يونج للبرسا</a></h1>
+                                            <a href="#" class="button">مشاهدة المزيد</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <video controls>
+                                                <source src="" type="video/mp4">
+                                                <source src="" type="video/ogg">
+                                              Your browser does not support the video tag.
+                                        </video>
+                                    <div class="header">
+                                        <div class="date">
+                                            <span class="day">12</span>
+                                            <span class="month">محرم</span>
+                                            <span class="year">1440</span>
+                                        </div>
+                                        <ul class="menu-content">
+                                            <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
+                                            <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title text-center" style="font-size: 20px;"><a href="#">انتقال دي يونج للبرسا</a></h1>
+                                            <a href="#" class="button">مشاهدة المزيد</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 image">
+                            <a href="images.html">
+                                <h1><span class="badge badge-secondary"> الصور</span></h1>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-xs-12" v-for="index in 3" :key="index">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <img src="imgaes/news/zid.jpg" alt="">
+                                    <div class="header">
+                                        <div class="date">
+                                            <span class="day">12</span>
+                                            <span class="month">محرم</span>
+                                            <span class="year">1440</span>
+                                        </div>
+                                        <ul class="menu-content">
+                                            <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
+                                            <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title text-center"><a href="#">احدث صور البطوله</a></h1>
+                                            <p class="text">صورة لاعبي نادي الاتحاد.</p>
+                                            <a href="images.html" class="button">مشاهدة المزيد </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+
+                            <a href="#">
+                                <h1><span class="badge badge-secondary" style="    width: 50%;
+                                    background: #000c;
+                                    text-align: right;
+                                    border-radius: 0;
+                                    padding: 10px;">البطولت الحاليه</span></h1>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-xs-12" v-for="index in 4" :key="index">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <img src="imgaes/bg/cha.jpg" alt="">
+                                    <div class="header">
+                                        <div class="date">
+                                            <span class="day">12</span>
+                                            <span class="month">محرم</span>
+                                            <span class="year">1440</span>
+                                        </div>
+                                        <ul class="menu-content">
+                                            <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
+                                            <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title text-center"><a href="#">احدث صور البطوله</a></h1>
+                                            <p class="text">صورة لاعبي نادي الاتحاد.</p>
+                                            <a href="images.html" class="button">مشاهدة المزيد </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="row">
+                        <div class="col-12">
+
+                            <a href="#">
+                                <h1><span class="badge badge-secondary" style="    width: 100%;
+                                            background: #000c;
+                                            text-align: right;
+                                            border-radius: 0;
+                                            padding: 10px;"> تصنيف الاحياء في جاده</span></h1>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex flex-nowrap" style="font-weight: bolder;">
+                                <div class="p-2 ml-auto">اسم الفريق</div>
+                                <div class="p-2">النقاط</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <ol style="padding-right: 15px;">
+                                <li>
+                                    <div class="d-flex flex-nowrap">
+                                        <div class="p-2 ml-auto">اسم الفريق</div>
+                                        <div class="p-2">35</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex flex-nowrap">
+                                        <div class="p-2 ml-auto">اسم الفريق</div>
+                                        <div class="p-2">30</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex flex-nowrap">
+                                        <div class="p-2 ml-auto">اسم الفريق</div>
+                                        <div class="p-2">28</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex flex-nowrap">
+                                        <div class="p-2 ml-auto">اسم الفريق</div>
+                                        <div class="p-2">25</div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="col-12 text-center">
+                            <a class="btn btn-dark" href="#">عرض المزيد</a>
+                        </div>
+                        <div class="col-12">
+
+
+                            <a href="articles.html">
+                                <h1><span class="badge badge-secondary" style="    width: 100%;
+                                                        background: #000c;
+                                                        text-align: right;
+                                                        border-radius: 0;
+                                                        padding: 10px;">    المقالات</span></h1>
+                            </a>
+
+                        </div>
+                        <div class="col-12" v-for="index in 3" :key="index">
+                            <a href="articles-view.html" style="text-decoration: none;direction: ltr;">
+                                <div class="card mb-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3">
+                                            <img src="imgaes/news/pep.jpg" style=" border-radius: 0 ;" class="card-img" alt="...">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color:#868e96;font-size: 16px;">ااسم صحاب المقال</h5>
+                                                <p class="card-text" style="color:#868e96;font-size: 14px;">صفقه من العيار الثقيل</p>
+                                                <p class="card-text" style="font-size: 13px;"><small class="text-muted">من خمس دقائث</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+
+
+                            <a href="articles.html">
+                                <h1><span class="badge badge-secondary" style="    width: 100%;
+                                                            background: #000c;
+                                                            text-align: right;
+                                                            border-radius: 0;
+                                                            padding: 10px;">  الاكثر قرائه</span></h1>
+                            </a>
+
+                        </div>
+                        <div class="col-12" v-for="index in 3" :key="index">
+                            <a href="articles-view.html" style="text-decoration: none;direction: ltr;">
+                                <div class="card mb-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3">
+                                            <img src="imgaes/news/zid.jpg" style=" border-radius: 0 ;" class="card-img" alt="...">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color:#868e96;font-size: 16px;">العنوان</h5>
+                                                <p class="card-text" style="color:#868e96;font-size: 14px;">صفقه من العيار الثقيل</p>
+                                                <p class="card-text" style="font-size: 13px;"><small class="text-muted">من خمس دقائث</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <div class="ads">
+                                <a href="#">
+                                    <img src="imgaes/ads/ads3.gif" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+
+
+                            <a href="articles.html">
+                                <h1><span class="badge badge-secondary" style="    width: 100%;
+                                                                background: #000c;
+                                                                text-align: right;
+                                                                border-radius: 0;
+                                                                padding: 10px;"> استطلاع راي</span></h1>
+                            </a>
+
+                        </div>
+                        <div class="col-12">
+
+
+                            <p class="mt-2 mb-2" style="font-weight: 600;">السوال ؟</p>
+
+                        </div>
+
+                        <div class="col-12">
+                            <form action="">
+                                <ul class="list-unstyled" style="    padding-right: 10px;">
+                                    <li>
+                                        <div class="form-check">
+                                            <label class="labeled">
+                                            ممتاز
+                                                    <input class="" type="radio" name="radio" value="1">
+                                                    <span class="checkmark"></span>   
+                                                </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <label class="labeled">
+                                                جيد جدا
+                                                        <input class="" type="radio" name="radio" value="2">
+                                                        <span class="checkmark"></span>   
+                                                    </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <label class="labeled">
+                                                   جيد
+                                                            <input class="" type="radio" name="radio" value="3">
+                                                            <span class="checkmark"></span>   
+                                                        </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <label class="labeled">
+                                                        غير مقبول
+                                                                <input class="" type="radio" name="radio" value="4">
+                                                                <span class="checkmark"></span>   
+                                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- pop up ads -->
+
         <div class="row">
             <div class="col-12">
-                <a href="#">
-                    <img src="imgaes/ads/ads1.jpg" alt="ads">
-                </a>
+                <div class="modal fade" id="overlay" data-keyboard="false" data-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" style="cursor: pointer" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">عنوان الاعلان</h4>
+                            </div>
+                            <div class="modal-body text-center">
+                                <a href="#"><img src="imgaes/ads/ads.jpg" style="width:95%;" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- cards for deatil -->
-    <div class="cards">
-        <div class="row">
-            <div class="col-md-8 col-xs-12">
+
+        <!-- pop up ads -->
+        <footer>
+            <div class="row">
+                <div class="col-12 col-xs-12  m-auto text-center">
+                    <form method="" action="" class="m-auto">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="" placeholder="الاسم">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="" placeholder="البريد الالكتوني">
+                        </div>
+                        <div class="form-group">
+
+                            <textarea class="form-control" name="" rows="3" placeholder="الرساله"></textarea>
+
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn">ارسال</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 text-center">
+                    <ul class="list-unstyled text-center">
+                        <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-snapchat-square fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
                 <div class="row">
                     <div class="col-12">
-                        <a href="news.html">
-                            <h1><span class="badge badge-secondary">الاخبار</span></h1>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-
-                        <div class="example-2 card">
-                            <div class="wrapper">
-                                <img src="imgaes/news/new.jpg" alt="">
-                                <div class="header">
-                                    <div class="date">
-                                        <span class="day">12</span>
-                                        <span class="month">محرم</span>
-                                        <span class="year">1440</span>
-                                    </div>
-                                    <ul class="menu-content">
-                                        <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
-                                        <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
-                                    </ul>
-                                </div>
-                                <div class="data">
-                                    <div class="content">
-                                        <h1 class="title text-center"><a href="#">انتقال دي يونج للبرسا</a></h1>
-                                        <p class="text">ربما في تسالت ما السبب في جمالها وروعتها.</p>
-                                        <a href="news-view.html" class="button">اقرا اكثر</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                        <div class="example-2 card">
-                            <div class="wrapper">
-                                <img src="imgaes/news/new1.jpg" alt="">
-                                <div class="header">
-                                    <div class="date">
-                                        <span class="day">12</span>
-                                        <span class="month">محرم</span>
-                                        <span class="year">1440</span>
-                                    </div>
-                                    <ul class="menu-content">
-                                        <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
-                                        <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
-                                    </ul>
-                                </div>
-                                <div class="data">
-                                    <div class="content">
-                                        <h1 class="title text-center"><a href="#">اقتراب جريزمان من الرسسا</a></h1>
-                                        <p class="text">ربما في تسالت ما السبب في جمالها وروعتها.</p>
-                                        <a href="news-view.html" class="button">اقرا اكثر</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-
-                        <div class="example-2 card">
-                            <div class="wrapper">
-                                <img src="imgaes/news/new.jpg" alt="">
-                                <div class="header">
-                                    <div class="date">
-                                        <span class="day">12</span>
-                                        <span class="month">محرم</span>
-                                        <span class="year">1440</span>
-                                    </div>
-                                    <ul class="menu-content">
-                                        <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
-                                        <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
-                                    </ul>
-                                </div>
-                                <div class="data">
-                                    <div class="content">
-                                        <h1 class="title text-center"><a href="#">انتقال دي يونج للبرسا</a></h1>
-                                        <p class="text">ربما في تسالت ما السبب في جمالها وروعتها.</p>
-                                        <a href="news-view.html" class="button">اقرا اكثر</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                        <div class="example-2 card">
-                            <div class="wrapper">
-                                <img src="imgaes/news/new1.jpg" alt="">
-                                <div class="header">
-                                    <div class="date">
-                                        <span class="day">12</span>
-                                        <span class="month">محرم</span>
-                                        <span class="year">1440</span>
-                                    </div>
-                                    <ul class="menu-content">
-                                        <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
-                                        <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
-                                    </ul>
-                                </div>
-                                <div class="data">
-                                    <div class="content">
-                                        <h1 class="title text-center"><a href="#">اقتراب جريزمان من الرسسا</a></h1>
-                                        <p class="text">ربما في تسالت ما السبب في جمالها وروعتها.</p>
-                                        <a href="news-view.html" class="button">اقرا اكثر</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <p>جميع الحقوق محفوظه لموقع <a href="#">KSAKORA</a></p>
                     </div>
                     <div class="col-12">
-                        <a href="videos.html">
-                            <h1><span class="badge badge-secondary">الفيديوهات</span></h1>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-
-                        <div class="example-2 card">
-                            <div class="wrapper">
-                                <video controls>
-                                            <source src="" type="video/mp4">
-                                            <source src="" type="video/ogg">
-                                          Your browser does not support the video tag.
-                                    </video>
-                                <div class="header">
-                                    <div class="date">
-                                        <span class="day">12</span>
-                                        <span class="month">محرم</span>
-                                        <span class="year">1440</span>
-                                    </div>
-                                    <ul class="menu-content">
-                                        <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
-                                        <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
-                                    </ul>
-                                </div>
-                                <div class="data">
-                                    <div class="content">
-                                        <h1 class="title text-center" style="font-size: 20px;"><a href="#">انتقال دي يونج للبرسا</a></h1>
-                                        <a href="#" class="button">مشاهدة المزيد</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                        <div class="example-2 card">
-                            <div class="wrapper">
-                                <video controls>
-                                            <source src="" type="video/mp4">
-                                            <source src="" type="video/ogg">
-                                          Your browser does not support the video tag.
-                                    </video>
-                                <div class="header">
-                                    <div class="date">
-                                        <span class="day">12</span>
-                                        <span class="month">محرم</span>
-                                        <span class="year">1440</span>
-                                    </div>
-                                    <ul class="menu-content">
-                                        <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
-                                        <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
-                                    </ul>
-                                </div>
-                                <div class="data">
-                                    <div class="content">
-                                        <h1 class="title text-center" style="font-size: 20px;"><a href="#">اقتراب جريزمان من الرسسا</a></h1>
-                                        <a href="videos.html" class="button">مشاهدة المزيد</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="ads">
-                            <a href="#">
-                                <img src="imgaes/ads/ads1.jpg" alt="">
-                            </a>
-                        </div>
+                        <ul class="list-unstyled p-0">
+                            <li><a href="#">اخبار</a></li>
+                            <li><a href="#">مقالات</a></li>
+                            <li><a href="#">صور</a></li>
+                            <li><a href="#">فيديوهات</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="row">
-                    <div class="col-12">
-                        <a href="articles.html">
-                            <h1><span class="badge badge-secondary">المقالات</span></h1>
-                        </a>
-                        <div class="example-2 card">
-                            <div class="wrapper">
-                                <img src="imgaes/news/pep.jpg" alt="">
-                                <div class="header">
-                                    <div class="date">
-                                        <span class="day">12</span>
-                                        <span class="month">محرم</span>
-                                        <span class="year">1440</span>
-                                    </div>
-                                    <ul class="menu-content">
-                                        <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
-                                        <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
-                                    </ul>
-                                </div>
-                                <div class="data">
-                                    <div class="content">
-                                        <h1 class="title text-center"><a href="#">تيكي تاكا بيب</a></h1>
-                                        <p class="text">ربما في تسالت ما السبب في جمالها وروعتها.</p>
-                                        <a href="articles-view.html" class="button">اقرا اكثر</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <a href="articles.html">
-                            <h1><span class="badge badge-secondary">الاكثر قرائه</span></h1>
-                        </a>
-                        <div class="example-2 card">
-                            <div class="wrapper">
-                                <img src="imgaes/news/pep.jpg" alt="">
-                                <div class="header">
-                                    <div class="date">
-                                        <span class="day">12</span>
-                                        <span class="month">محرم</span>
-                                        <span class="year">1440</span>
-                                    </div>
-                                    <ul class="menu-content">
-                                        <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
-                                        <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
-                                    </ul>
-                                </div>
-                                <div class="data">
-                                    <div class="content">
-                                        <h1 class="title text-center"><a href="#">تيكي تاكا بيب</a></h1>
-                                        <p class="text">ربما في تسالت ما السبب في جمالها وروعتها.</p>
-                                        <a href="articles-view.html" class="button">اقرا اكثر</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="ads">
-                            <a href="#">
-                                <img src="imgaes/ads/ads3.gif" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-12 image">
-                        <a href="images.html">
-                            <h1><span class="badge badge-secondary"> الصور</span></h1>
-                        </a>
-                        <div class="example-2 card">
-                            <div class="wrapper">
-                                <img src="imgaes/news/zid.jpg" alt="">
-                                <div class="header">
-                                    <div class="date">
-                                        <span class="day">12</span>
-                                        <span class="month">محرم</span>
-                                        <span class="year">1440</span>
-                                    </div>
-                                    <ul class="menu-content">
-                                        <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
-                                        <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
-                                    </ul>
-                                </div>
-                                <div class="data">
-                                    <div class="content">
-                                        <h1 class="title text-center"><a href="#">احدث صور البطوله</a></h1>
-                                        <p class="text">صورة لاعبي نادي الاتحاد.</p>
-                                        <a href="images.html" class="button">مشاهدة المزيد </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- pop up ads -->
-
-    <div class="row">
-        <div class="col-12">
-            <div class="modal fade" id="overlay" data-keyboard="false" data-backdrop="static">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" style="cursor: pointer" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">عنوان الاعلان</h4>
-                        </div>
-                        <div class="modal-body text-center">
-                            <a href="#"><img src="imgaes/ads/ads.jpg" style="width:95%;" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- pop up ads -->
+        </footer>
+    </main>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>

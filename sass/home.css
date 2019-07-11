@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic,latin-ext");
 body {
   background-color: #d9d9d9;
@@ -5,10 +6,175 @@ body {
   direction: rtl;
 }
 
+.labeled {
+  position: relative;
+  width: 100%;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+.labeled input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.labeled .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.labeled:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.labeled input:checked ~ .checkmark {
+  background-color: #181817;
+}
+
+.labeled input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.labeled .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #FFB946;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.banner {
+  position: relative;
+  height: 200px;
+}
+
+.banner img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.banner a {
+  text-decoration: none;
+}
+
+.modal .modal-body img {
+  width: calc(95%);
+  object-fit: cover;
+}
+
+.champions {
+  background: #3d3f41;
+  padding: 25px 20px;
+  color: #d9d9d9;
+}
+
+.champions ul a {
+  text-decoration: none;
+  color: #d9d9d9;
+}
+
+.champions ul a li::before {
+  content: "•";
+  color: #ededed;
+}
+
 @media screen and (max-width: 590px) {
   .container {
     width: 100%;
   }
+}
+
+footer {
+  background-color: #3d3f41;
+}
+
+footer form {
+  width: 65%;
+}
+
+footer form .form-control {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding: .7rem 1.2rem;
+  font-size: .99999rem;
+  line-height: 1.25;
+  color: #181817 !important;
+  background-color: #fff;
+}
+
+footer .btn {
+  cursor: pointer;
+  padding: 5px 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #181817;
+  -webkit-transition: 0.66s ease-out;
+  -moz-transition: 0.66s ease-out;
+  -o-transition: 0.66s ease-out;
+  transition: 0.66s ease-out;
+  min-width: 45%;
+  padding: 15px;
+  margin-top: 25px;
+}
+
+footer ul {
+  padding: 0;
+  justify-content: center;
+  display: flex;
+}
+
+footer ul li {
+  margin-left: 15px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #737372;
+}
+
+footer ul li a:hover {
+  color: #fff;
+  transition: .3s ease-in;
+}
+
+.copy {
+  background-color: #181817;
+  padding: 25px;
 }
 
 .active {
@@ -34,6 +200,43 @@ body {
 .bg-dark .nav-item .nav-link:hover {
   color: #fff;
   transition: .3s ease-in;
+}
+
+.bg-dark .navbar-brand {
+  color: #FFB946;
+}
+
+.bg-dark .navbar-brand:hover {
+  color: #FFB946;
+}
+
+.bg-dark .icon-bar {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bg-dark .icon-bar .bar1,
+.bg-dark .icon-bar .bar2,
+.bg-dark .icon-bar .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #FFB946;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.bg-dark .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.bg-dark .change .bar2 {
+  opacity: 0;
+}
+
+.bg-dark .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .line {
@@ -175,6 +378,24 @@ body {
   font-weight: 300;
 }
 
+.cards a {
+  color: #d9d9d9;
+}
+
+.cards a .card {
+  box-shadow: 0 1px 9px -6px;
+  border-radius: 0;
+}
+
+.cards a .card .card-body {
+  direction: rtl;
+}
+
+.cards a .card .card-img,
+.cards a .card img {
+  height: 100%;
+}
+
 .cards .card {
   float: left;
   padding: 0;
@@ -230,7 +451,7 @@ body {
   height: 100%;
   object-fit: cover;
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.75555;
 }
 
 .cards .card .wrapper video {
@@ -296,8 +517,10 @@ body {
 }
 
 .cards .example-2 .header .date {
-  float: left;
-  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  left: 0;
+  font-size: 14px;
 }
 
 .cards .example-2 .menu-content {
