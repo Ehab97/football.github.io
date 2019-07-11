@@ -17,139 +17,206 @@
 </head>
 
 <body class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" style="color:#fff;" href="#">الاسم</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-        </button>
+    <main id="app">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="icon-bar" @click="icons =! icons;">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <a class="navbar-brand" href="home.html">KSAKORA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                                    <span class="navbar-toggler-icon"></span>
+                                        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="home.html">الرئيسيه</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="news.html">الاخبار</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="articles.html">المقالات</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">البطولات</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:#fff;" href="images.html">الصور</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="videos.html">الفيديوهات</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">تسجيل الدخول</a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:#fff;" href="home.html">الرئيسيه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">الاخبار</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articles.html">المقالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="images.html">الصور</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="videos.html">الفيديوهات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="videos.html">الاعلان</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">التواصل معنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">تسجيل الدخول <i class="fa fa-user-circle-o ml-2"></i></a>
+                    </li>
 
-            </ul>
+                </ul>
+            </div>
+
+
+        </nav>
+        <div class="champions" v-show="icons">
+            <div class="row">
+                <div class="col-12">
+                    <h5>البطولات</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">اسم البطوله</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
 
-    </nav>
-    <div class="heading">
-        <div class="row">
-            <div class="col-2">
-                <h4>الصور</h4>
-            </div>
-            <div class="col-10">
-                <hr/>
-            </div>
-        </div>
-    </div>
-    <div class="images">
-        <div class="row">
-            <div class="col-md-3 col-xs-12">
-                <a href="#" class="pop"><img src="imgaes/news/new1.jpg" alt=""></a>
-            </div>
-            <div class="col-md-3 col-xs-12">
-                <a href="#" class="pop"><img src="imgaes/news/new.jpg" alt=""></a>
-            </div>
-            <div class="col-md-3 col-xs-12">
-                <a href="#" class="pop"><img src="imgaes/news/pep.jpg" alt=""></a>
-            </div>
-            <div class="col-md-3 col-xs-12">
-                <a href="#" class="pop"><img src="imgaes/news/zid.jpg" alt=""></a>
+        <div class="heading">
+            <div class="row">
+                <div class="col-2">
+                    <h4>الصور</h4>
+                </div>
+                <div class="col-10">
+                    <hr/>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3 col-xs-12">
-                <a href="#" class="pop"><img src="imgaes/news/new1.jpg" alt=""></a>
+        <div class="images">
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <a href="#" class="pop"><img src="imgaes/news/new1.jpg" alt=""></a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="#" class="pop"><img src="imgaes/news/new.jpg" alt=""></a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="#" class="pop"><img src="imgaes/news/pep.jpg" alt=""></a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="#" class="pop"><img src="imgaes/news/zid.jpg" alt=""></a>
+                </div>
             </div>
-            <div class="col-md-3 col-xs-12">
-                <a href="#" class="pop"><img src="imgaes/news/new.jpg" alt=""></a>
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <a href="#" class="pop"><img src="imgaes/news/new1.jpg" alt=""></a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="#" class="pop"><img src="imgaes/news/new.jpg" alt=""></a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="#" class="pop"><img src="imgaes/news/pep.jpg" alt=""></a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="#" class="pop"><img src="imgaes/news/zid.jpg" alt=""></a>
+                </div>
             </div>
-            <div class="col-md-3 col-xs-12">
-                <a href="#" class="pop"><img src="imgaes/news/pep.jpg" alt=""></a>
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <a href="#" class="pop"><img src="imgaes/news/new1.jpg" alt=""></a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="#" class="pop"><img src="imgaes/news/new.jpg" alt=""></a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="#" class="pop"><img src="imgaes/news/pep.jpg" alt=""></a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="#" class="pop"><img src="imgaes/news/zid.jpg" alt=""></a>
+                </div>
             </div>
-            <div class="col-md-3 col-xs-12">
-                <a href="#" class="pop"><img src="imgaes/news/zid.jpg" alt=""></a>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a class="btn btn-dark" href="#">مشاهدة المزيد</a>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 col-xs-12">
-                <a href="#" class="pop"><img src="imgaes/news/new1.jpg" alt=""></a>
-            </div>
-            <div class="col-md-3 col-xs-12">
-                <a href="#" class="pop"><img src="imgaes/news/new.jpg" alt=""></a>
-            </div>
-            <div class="col-md-3 col-xs-12">
-                <a href="#" class="pop"><img src="imgaes/news/pep.jpg" alt=""></a>
-            </div>
-            <div class="col-md-3 col-xs-12">
-                <a href="#" class="pop"><img src="imgaes/news/zid.jpg" alt=""></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 text-center">
-                <a class="btn btn-dark" href="#">مشاهدة المزيد</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 txte-center">
+            <div class="row">
+                <div class="col-12 txte-center">
 
-                <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="cursor: pointer;">&times;</span><span class="sr-only">Close</span></button>
-                                <img src="" class="imagepreview" style="width: 100%;">
+                    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="cursor: pointer;">&times;</span><span class="sr-only">Close</span></button>
+                                    <img src="" class="imagepreview" style="width: 100%;">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <!-- pop up ads -->
+        <!-- pop up ads -->
 
-    <div class="row">
-        <div class="col-12">
-            <div class="modal fade" id="overlay" data-keyboard="false" data-backdrop="static">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" style="cursor: pointer" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">عنوان الاعلان</h4>
-                        </div>
-                        <div class="modal-body text-center">
-                            <a href="#"><img src="imgaes/ads/ads.jpg" style="width:95%;" alt=""></a>
+        <div class="row">
+            <div class="col-12">
+                <div class="modal fade" id="overlay" data-keyboard="false" data-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" style="cursor: pointer" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">عنوان الاعلان</h4>
+                            </div>
+                            <div class="modal-body text-center">
+                                <a href="#"><img src="imgaes/ads/ads.jpg" style="width:95%;" alt=""></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- pop up ads -->
+        <!-- pop up ads -->
 
+        <footer id="footer">
+            <div class="row">
+                <div class="col-12 col-xs-12  m-auto text-center">
+                    <form method="" action="" class="m-auto">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="" placeholder="الاسم">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="" placeholder="البريد الالكتوني">
+                        </div>
+                        <div class="form-group">
+
+                            <textarea class="form-control" name="" rows="3" placeholder="الرساله"></textarea>
+
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn">ارسال</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 text-center">
+                    <ul class="list-unstyled text-center">
+                        <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-snapchat-square fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="row">
+                    <div class="col-12">
+                        <p>جميع الحقوق محفوظه لموقع <a href="#">KSAKORA</a></p>
+                    </div>
+                    <div class="col-12">
+                        <ul class="list-unstyled p-0">
+                            <li><a href="#">اخبار</a></li>
+                            <li><a href="#">مقالات</a></li>
+                            <li><a href="#">صور</a></li>
+                            <li><a href="#">فيديوهات</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
