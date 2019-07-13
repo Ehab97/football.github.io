@@ -164,4 +164,35 @@ footer {
       .copy ul li a:hover {
         color: #fff; }
 
+.bg-dark {
+  background: #181817 !important; }
+  .bg-dark .nav-item .nav-link {
+    color: #737372; }
+    .bg-dark .nav-item .nav-link:hover {
+      color: #fff;
+      transition: .3s ease-in; }
+  .bg-dark .navbar-brand {
+    color: #FFB946; }
+    .bg-dark .navbar-brand:hover {
+      color: #FFB946; }
+  .bg-dark .icon-bar {
+    display: inline-block;
+    cursor: pointer; }
+    .bg-dark .icon-bar .bar1,
+    .bg-dark .icon-bar .bar2,
+    .bg-dark .icon-bar .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #FFB946;
+      margin: 6px 0;
+      transition: 0.4s; }
+  .bg-dark .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  .bg-dark .change .bar2 {
+    opacity: 0; }
+  .bg-dark .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px); }
+
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     // const mq = window.matchMedia("(min-width: 500px)");
     var tabColor = document.querySelectorAll('.matches .date ul li');
+    var liColor = document.querySelectorAll('#champ ul li');
+    var as = document.querySelectorAll('#champ ul li a');
     var a = document.querySelectorAll('.matches .date ul li a');
     var icon = document.querySelector('.icon-bar');
 
@@ -20,6 +22,23 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 tabColor[i].classList.add('liActive');
                 a[i].style.color = '#212224';
+            }
+        }
+    }
+    var ChangeTapColors = function() {
+        for (let i = 0; i < liColor.length; ++i) {
+            liColor[i].onclick = () => {
+                var c = 0;
+                while (c < liColor.length) {
+                    // tabColor[c].classList.contains('activeTap') ? tabColor.classList.remove('activeTap') : '';
+                    if (liColor[c].classList.contains('liActive')) {
+                        liColor[c].classList.remove('liActive');
+                        as[c].style.color = '';
+                    }
+                    c++;
+                }
+                liColor[i].classList.add('liActive');
+                as[i].style.color = '#fff';
             }
         }
     }
@@ -50,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //     x.classList.toggle("change");
     // }
     ChangeTapColor();
-
+    ChangeTapColors();
 });
 new Vue({
     el: '#app',
@@ -59,7 +78,16 @@ new Vue({
         tom: false,
         yaster: false,
         live: false,
-        icons: false
+        icons: false,
+        s32: true,
+        s16: false,
+        s8: false,
+        s4: false,
+        s2: false,
+        g1: true,
+        g2: false,
+        g3: false,
+        g4: false
     },
     methods: {
 
