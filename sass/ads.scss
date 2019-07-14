@@ -5,3 +5,30 @@
     .bg-dark {
         @include navbar;
     }
+    
+    .heading {
+        @include heading;
+    }
+    
+    .deatils {
+        // background-color: #fff;
+        margin-bottom: 35px;
+        .card {
+            margin: 25px auto;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 25px auto;
+            .custom-select {
+                width: 100%;
+            }
+        }
+        .btn-light {
+            color: #111;
+            background-color: rgb(235, 237, 239);
+            border-color: #f8f9fa;
+            padding: 15px 50px;
+        }
+    }

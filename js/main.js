@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var liColors = document.querySelectorAll('#champ .ul li');
     var ass = document.querySelectorAll('#champ .ul li');
     var icon = document.querySelector('.icon-bar');
-
+    var navlink = document.querySelectorAll('.bg-dark .nav-item .nav-link');
+    navlink[5].setAttribute('href', 'ads.html');
     var ChangeTapColor = function() {
         for (let i = 0; i < tabColor.length; ++i) {
             tabColor[i].onclick = () => {
@@ -107,10 +108,17 @@ new Vue({
         g1: true,
         g2: false,
         g3: false,
-        g4: false
+        g4: false,
+        j: 5
     },
     methods: {
-
+        increment() {
+            // this.j += 5;
+            this.j <= 24 ? this.j += 5 : this.j;
+        },
+        decrement() {
+            this.j -= 5;
+        }
     },
 
 });

@@ -102,24 +102,34 @@ footer {
       line-height: 1.25;
       color: #181817 !important;
       background-color: #fff; }
+  @media screen and (max-width: 590px) {
+    footer form {
+      width: 90%; }
+    footer .btn {
+      min-width: calc(100% / 3); }
+    footer .copy ul li:not(:nth-child(1))::before {
+      width: 0; }
+    footer .list-unstyled {
+      padding-right: 15px !important; } }
   footer .btn {
     cursor: pointer;
     padding: 5px 20px;
-    background: #fff;
-    border: 1px solid #ddd;
+    background: #181817;
+    border: 1px solid #FFB946;
     -webkit-box-sizing: border-box;
+    font-weight: 600;
     box-sizing: border-box;
     border-radius: 5px;
-    color: #181817;
+    color: #737372;
     -webkit-transition: 0.66s ease-out;
     -moz-transition: 0.66s ease-out;
     -o-transition: 0.66s ease-out;
     transition: 0.66s ease-out;
-    min-width: calc(100% / 2);
+    min-width: calc(100% / 4);
     padding: 15px;
     margin-top: 25px; }
   footer ul {
-    padding: 0;
+    padding-right: 15px;
     justify-content: center;
     display: flex; }
     footer ul li {
@@ -194,5 +204,34 @@ footer {
   .bg-dark .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px); }
+
+.heading {
+  margin: 40px auto; }
+  .heading h4 {
+    font-size: 25px;
+    font-weight: 600; }
+  .heading hr {
+    border: 2px solid #181817; }
+  @media screen and (max-width: 590px) {
+    .heading hr {
+      width: 80%;
+      float: left; } }
+
+.deatils {
+  margin-bottom: 35px; }
+  .deatils .card {
+    margin: 25px auto; }
+  .deatils form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 25px auto; }
+    .deatils form .custom-select {
+      width: 100%; }
+  .deatils .btn-light {
+    color: #111;
+    background-color: #ebedef;
+    border-color: #f8f9fa;
+    padding: 15px 50px; }
 
 /*# sourceMappingURL=ads.css.map */

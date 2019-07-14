@@ -5,3 +5,129 @@
     .bg-dark {
         @include navbar;
     }
+    
+    .heading {
+        @include heading;
+    }
+    
+    .team {
+        // background: #fff;
+        @include cards;
+        .card {
+            .size {
+                border-radius: calc(.25rem - 1px);
+                max-height: 150px;
+                max-width: 150px;
+                object-fit: cover;
+            }
+        }
+        .heading {
+            h4 {
+                font-size: 20px;
+                font-weight: 600;
+                width: 100%;
+            }
+            hr {
+                border: 1px solid #FFB946;
+                width: 95%;
+            }
+        }
+        .statsics {
+            background-color: #fff;
+            margin: 0;
+            padding: 18px 20px;
+            span {
+                margin-left: 10px;
+                i,
+                img {
+                    margin-left: 5px;
+                }
+            }
+            strong {
+                font-size: 20px;
+            }
+        }
+        .accordion {
+            .card {
+                margin-bottom: 0;
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem;
+                .card-header {
+                    cursor: pointer;
+                    background-color: #c6cac8;
+                    h2 {
+                        font-size: 20px;
+                        padding: 10px;
+                        font-weight: 600;
+                    }
+                }
+                .card-body {
+                    padding: 0;
+                }
+            }
+        }
+        .center {
+            margin: -20px 0;
+            img {
+                width: calc(100%/2);
+                margin: 20px auto;
+            }
+            p {
+                color: #000;
+            }
+            .badge {
+                color: #7b7b7b;
+                font-size: 30px;
+                display: inline-block;
+                width: 100%;
+                background-color: #FFB946;
+                padding: 5px 5px;
+                text-align: center;
+                font-weight: 100;
+            }
+        }
+        .bottom {
+            margin: -16px 0 0 0;
+            .badge {
+                background: #FFB946;
+                border-radius: 0;
+                width: 30%;
+                color: #7b7b7b;
+                font-size: 15px;
+                padding: 10px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+            p {
+                text-align: right;
+                color: #7b7b7b;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                i {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    
+    .backColor {
+        background-color: #f7f7f7 $im;
+        box-shadow: 0 1px 1px #e2e2e2 $im;
+        margin-bottom: 15px $im;
+    }
+    
+    .centerlize {
+        justify-content: center;
+        display: flex;
+    }
+    
+    @media screen and (max-width: 590px) {}

@@ -122,25 +122,40 @@
                 background-color: #fff;
             }
         }
+        @media screen and (max-width: 590px) {
+            form {
+                width: 90%;
+            }
+            .btn {
+                min-width: calc(100% / 3);
+            }
+            .copy ul li:not(:nth-child(1))::before {
+                width: 0;
+            }
+            .list-unstyled {
+                padding-right: 15px $im;
+            }
+        }
         .btn {
             cursor: pointer;
             padding: 5px 20px;
-            background: #fff;
-            border: 1px solid #ddd;
+            background: $mc;
+            border: 1px solid $tc;
             -webkit-box-sizing: border-box;
+            font-weight: 600;
             box-sizing: border-box;
             border-radius: 5px;
-            color: $mc;
+            color: #737372;
             -webkit-transition: 0.66s ease-out;
             -moz-transition: 0.66s ease-out;
             -o-transition: 0.66s ease-out;
             transition: 0.66s ease-out;
-            min-width: calc(100% / 2);
+            min-width: calc(100% / 4);
             padding: 15px;
             margin-top: 25px;
         }
         ul {
-            padding: 0;
+            padding-right: 15px;
             justify-content: center;
             display: flex;
             li {
