@@ -10,7 +10,14 @@ document.addEventListener("DOMContentLoaded", function() {
     var ass = document.querySelectorAll('#champ .ul li');
     var icon = document.querySelector('.icon-bar');
     var navlink = document.querySelectorAll('.bg-dark .nav-item .nav-link');
+    var chlink = document.querySelectorAll('.champions ul a');
+    var chlink2 = document.querySelectorAll('.col-md-3 .example-2 .button')
     navlink[5].setAttribute('href', 'ads.html');
+    chlink[0].setAttribute('href', 'champions.html');
+    for (let i = 0; i < chlink2.length; i++) {
+        chlink2[i].setAttribute('href', 'champions.html');
+
+    }
     var ChangeTapColor = function() {
         for (let i = 0; i < tabColor.length; ++i) {
             tabColor[i].onclick = () => {
