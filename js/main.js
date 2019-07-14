@@ -3,9 +3,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     // const mq = window.matchMedia("(min-width: 500px)");
     var tabColor = document.querySelectorAll('.matches .date ul li');
+    var a = document.querySelectorAll('.matches .date ul li a');
     var liColor = document.querySelectorAll('#champ ul li');
     var as = document.querySelectorAll('#champ ul li a');
-    var a = document.querySelectorAll('.matches .date ul li a');
+    var liColors = document.querySelectorAll('#champ .ul li');
+    var ass = document.querySelectorAll('#champ .ul li');
     var icon = document.querySelector('.icon-bar');
 
     var ChangeTapColor = function() {
@@ -24,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 a[i].style.color = '#212224';
             }
         }
-    }
+    };
     var ChangeTapColors = function() {
         for (let i = 0; i < liColor.length; ++i) {
             liColor[i].onclick = () => {
@@ -33,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     // tabColor[c].classList.contains('activeTap') ? tabColor.classList.remove('activeTap') : '';
                     if (liColor[c].classList.contains('liActive')) {
                         liColor[c].classList.remove('liActive');
-                        as[c].style.color = '';
+                        as[c].style.color = '#8c8d8e';
                     }
                     c++;
                 }
@@ -41,7 +43,24 @@ document.addEventListener("DOMContentLoaded", function() {
                 as[i].style.color = '#fff';
             }
         }
-    }
+    };
+    var ChangeTapColorss = function() {
+        for (let i = 0; i < liColors.length; ++i) {
+            liColors[i].onclick = () => {
+                var c = 0;
+                while (c < liColors.length) {
+                    // tabColor[c].classList.contains('activeTap') ? tabColor.classList.remove('activeTap') : '';
+                    if (liColors[c].classList.contains('liActives')) {
+                        liColors[c].classList.remove('liActives');
+                        ass[c].style.color = '#8c8d8e';
+                    }
+                    c++;
+                }
+                liColors[i].classList.add('liActives');
+                ass[i].style.color = '#fff';
+            }
+        }
+    };
     $('.carousel').carousel({
         interval: 4000
     });
@@ -70,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // }
     ChangeTapColor();
     ChangeTapColors();
+    ChangeTapColorss();
 });
 new Vue({
     el: '#app',
