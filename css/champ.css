@@ -421,8 +421,10 @@ footer {
       color: #000;
       transition: .2s ease-out; }
 
-.liActive {
-  background-color: #232324 !important; }
+.liActive,
+.liActives {
+  background-color: #232324 !important;
+  color: #fff; }
 
 .backColor {
   background-color: #f7f7f7 !important;
