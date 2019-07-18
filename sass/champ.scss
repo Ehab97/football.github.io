@@ -191,6 +191,18 @@
         }
     }
     
+    @media screen and ( max-width: 1024px) {
+        .matches .card .card-img-top {
+            min-height: 80px $im;
+            min-width: 80px $im;
+        }
+        .matches .card h5,
+        .matches .card p {
+            font-size: 9px;
+            font-weight: 900;
+        }
+    }
+    
     @media screen and (max-width: 590px) {
         .matches .match {
             padding: 10px 10px;
@@ -209,5 +221,16 @@
         }
         .matches ul li a {
             font-size: 10px;
+        }
+        .table thead th {
+            font-size: 12px;
+        }
+        .matches .card h5,
+        .matches .card p {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .statsics span img {
+            height: 23px;
         }
     }

@@ -445,4 +445,15 @@ footer {
   justify-content: center;
   display: flex; }
 
+@media screen and (max-width: 590px) {
+  .tsc {
+    text-align: center; }
+
+  .cc {
+    width: 90%;
+    margin: 35px auto; }
+
+  .statsics span img {
+    height: 23px; } }
+
 /*# sourceMappingURL=teams.css.map */

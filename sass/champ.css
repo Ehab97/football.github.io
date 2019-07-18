@@ -137,26 +137,42 @@ footer form .form-control {
   background-color: #fff;
 }
 
+@media screen and (max-width: 590px) {
+  footer form {
+    width: 90%;
+  }
+  footer .btn {
+    min-width: calc(100% / 3);
+  }
+  footer .copy ul li:not(:nth-child(1))::before {
+    width: 0;
+  }
+  footer .list-unstyled {
+    padding-right: 15px !important;
+  }
+}
+
 footer .btn {
   cursor: pointer;
   padding: 5px 20px;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #181817;
+  border: 1px solid #FFB946;
   -webkit-box-sizing: border-box;
+  font-weight: 600;
   box-sizing: border-box;
   border-radius: 5px;
-  color: #181817;
+  color: #737372;
   -webkit-transition: 0.66s ease-out;
   -moz-transition: 0.66s ease-out;
   -o-transition: 0.66s ease-out;
   transition: 0.66s ease-out;
-  min-width: calc(100% / 2);
+  min-width: calc(100% / 4);
   padding: 15px;
   margin-top: 25px;
 }
 
 footer ul {
-  padding: 0;
+  padding-right: 15px;
   justify-content: center;
   display: flex;
 }
@@ -709,6 +725,18 @@ footer ul li a:hover {
   font-size: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  .matches .card .card-img-top {
+    min-height: 80px !important;
+    min-width: 80px !important;
+  }
+  .matches .card h5,
+  .matches .card p {
+    font-size: 9px;
+    font-weight: 900;
+  }
+}
+
 @media screen and (max-width: 590px) {
   .matches .match {
     padding: 10px 10px;
@@ -727,5 +755,16 @@ footer ul li a:hover {
   }
   .matches ul li a {
     font-size: 10px;
+  }
+  .table thead th {
+    font-size: 12px;
+  }
+  .matches .card h5,
+  .matches .card p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .statsics span img {
+    height: 23px;
   }
 }
