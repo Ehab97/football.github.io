@@ -205,92 +205,19 @@ footer {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px); }
 
-.heading {
-  margin: 40px auto; }
-  .heading h4 {
-    font-size: 25px;
-    font-weight: 600; }
-  .heading hr {
-    border: 2px solid #181817; }
-  @media screen and (max-width: 590px) {
-    .heading hr {
-      width: 80%;
-      float: left; } }
+h2 {
+  text-align: center;
+  margin-top: 150px; }
 
-.view {
-  margin: 40px auto;
-  background: #fff;
-  padding: 15px 0; }
-  .view h3 {
-    font-size: 2em;
-    line-height: 1.5;
-    margin: 0;
-    margin-right: 25px;
-    color: #000; }
-  .view p {
-    margin-right: 25px;
-    font-size: 1.3em;
-    color: #696969;
-    margin: 10px 0 0;
-    margin-bottom: 15px;
-    margin-right: 25px; }
-  .view .lead {
-    font-size: 16.5px;
-    color: 000000;
-    width: 95%;
-    margin: 30px 20px;
-    line-height: 2; }
-  .view img {
-    width: calc(100%);
-    height: calc(100%); }
-  .view .comment {
-    background: #ededed;
-    width: 95%;
-    margin: 25px 10px;
-    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
-    padding: 15px 10px;
-    max-height: 200px; }
-    .view .comment p {
-      font-size: 15px;
-      color: #1b1c1e; }
-  .view .form-group .form-control {
-    color: #1c1e21;
-    width: 95%;
-    margin: 25px auto;
-    font-size: 15px;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 2px solid rgba(0, 0, 0, 0.125);
-    border-radius: .25rem;
-    min-height: 80px; }
-  .view .form-group .btn {
-    margin: 0px 10px;
-    border-radius: 8px;
-    width: calc(100% / 5); }
-  .view hr {
-    border-top: 1px solid #ededed; }
-  @media screen and (max-width: 590px) {
-    .view .lead {
-      width: 90%;
-      font-size: 14.5px;
-      margin: 15px auto; }
-    .view .comment {
-      background: #ededed;
-      width: 95%;
-      margin: 25px auto;
-      border-radius: 10px;
-      padding: 15px 5px;
-      max-height: 200px; }
-    .view .form-group .btn {
-      margin: 0px 10px;
-      border-radius: 8px;
-      width: calc(100% / 4);
-      text-align: center; } }
+.h1 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 15em;
+  font-weight: 100;
+  text-shadow: #FFB946 1px 1px, #FFB946 2px 2px, #FFB946 3px 3px, #FFB946 4px 4px, #FFB946 5px 5px, #FFB946 6px 6px; }
 
-.card {
-  width: 95%;
-  margin: 25px auto; }
-  .card p {
-    font-size: 16px; }
+@media screen and (max-width: 590px) {
+  .h1 {
+    font-size: 10em; } }
 
-/*# sourceMappingURL=articles-views.css.map */
+/*# sourceMappingURL=404.css.map */
