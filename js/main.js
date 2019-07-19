@@ -72,10 +72,16 @@ document.addEventListener("DOMContentLoaded", function() {
     $('.carousel').carousel({
         interval: 4000
     });
-    $('.pop').on('click', function() {
+    //images pop
+    $(document.body).on('click', '.pop', function() {
         $('.imagepreview').attr('src', $(this).find('img').attr('src'));
         $('#imagemodal').modal('show');
     });
+
+    // $('.pop').on('click', function() {
+    //     $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+    //     $('#imagemodal').modal('show');
+    // });
     $('#overlay').modal('show');
 
     setTimeout(function() {

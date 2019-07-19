@@ -5,6 +5,10 @@ body {
   font-family: "Cairo", fs;
   direction: rtl; }
 
+.h {
+  width: 205px;
+  height: 145px !important; }
+
 .labeled {
   position: relative;
   width: 100%;
@@ -89,7 +93,11 @@ body {
     width: 100%; }
 
   footer form {
-    width: 95%; } }
+    width: 95%; }
+
+  .h {
+    width: 100%;
+    height: 100% !important; } }
 footer {
   background-color: #3d3f41; }
   footer form {
