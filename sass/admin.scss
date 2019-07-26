@@ -1,0 +1,128 @@
+//general
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic,latin-ext');
+@import 'variables';
+body {
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+    direction: rtl;
+    background-color: #FEFEFE;
+}
+
+//navbar->header
+.bg-dark {
+    background: $mc !important;
+    .nav-item {
+        .nav-link {
+            color: #737372;
+            &:hover {
+                color: #fff;
+                transition: .3s ease-in;
+            }
+        }
+    }
+    .navbar-brand {
+        color: $tc;
+        &:hover {
+            color: $tc;
+        }
+    }
+}
+
+.select {
+    margin: 40px 0;
+    .nav {
+        margin-bottom: 50px;
+        li {
+            a {
+                text-decoration: none;
+                border-radius: .25rem;
+                margin: 10px;
+                color: #737372;
+                &:hover {
+                    transition: .3s ease-in-out;
+                    color: $tc;
+                    background-color: $mc;
+                }
+            }
+            .active {
+                color: $tc;
+                background-color: $mc;
+            }
+        }
+    }
+    .table {
+        th,
+        td {
+            text-align: right;
+        }
+        .btn {
+            cursor: pointer;
+            width: calc(85% / 3);
+            margin-left: 5px;
+        }
+    }
+    .table-bordered {
+        border: 3px solid #e9ecef;
+    }
+    .pagination {
+        direction: ltr;
+        margin: 25px 0;
+        .page-link {
+            color: #000;
+        }
+    }
+}
+
+.form {
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0px 10px 40px -10px rgba(24, 65, 107, 0.35);
+    .form-group {
+        margin-bottom: 25px;
+        .form-control {
+            background-color: #ddd;
+            opacity: 0.6;
+            border: none;
+            padding: 15px 5px;
+        }
+        .btn-success {
+            color: #fff;
+            background-color: #009688;
+            border-color: #009688;
+            padding: 10px 40px;
+            margin: 40px 0px 0;
+        }
+    }
+}
+
+footer {
+    background: $mc !important;
+    padding: 25px 0;
+    p {
+        color: #fff;
+        margin: 0;
+        a {
+            text-decoration: none;
+            color: $tc;
+            cursor: pointer;
+            margin-right: 10px;
+            &:hover {
+                text-decoration: none;
+                color: $tc;
+            }
+        }
+    }
+}
+
+//media query
+@media screen and (max-width: 1366px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 590px) {
+    .select .table .btn {
+        width: calc(100%);
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+}
