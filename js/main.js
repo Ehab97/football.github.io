@@ -123,7 +123,9 @@ new Vue({
         g2: false,
         g3: false,
         g4: false,
-        j: 5
+        j: 5,
+        addSta: false,
+        text: false
     },
     methods: {
         increment() {

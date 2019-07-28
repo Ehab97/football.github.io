@@ -72,8 +72,8 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
+                                <tr v-for="i in 10" ::key="i">
+                                    <th scope="row">{{i}}</th>
                                     <td>احمد محمد</td>
                                     <td>الاهلي</td>
 

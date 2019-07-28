@@ -1,6 +1,7 @@
 //general
 @import url('https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic,latin-ext');
 @import 'variables';
+@import 'mixins';
 body {
     font-family: 'Cairo', 'Tajawal', sans-serif;
     direction: rtl;
@@ -83,7 +84,8 @@ body {
             background-color: #ddd;
             opacity: 0.6;
             border: none;
-            padding: 15px 5px;
+            // padding: 15px 5px;
+            height: 55px !important;
         }
         .btn-success {
             color: #fff;
@@ -91,6 +93,115 @@ body {
             border-color: #009688;
             padding: 10px 40px;
             margin: 40px 0px 0;
+        }
+    }
+}
+
+.team {
+    // background: #fff;
+    @include cards;
+    .card {
+        padding: 15px;
+        .card-img {
+            height: 230px $im;
+            width: 230px $im;
+        }
+    }
+    .heading {
+        margin: 15px 0 !important;
+        h4 {
+            font-size: 20px;
+            font-weight: 600;
+            width: 100%;
+        }
+        hr {
+            border: 1px solid #FFB946;
+            width: 95%;
+        }
+    }
+    .statsics {
+        background-color: #fff;
+        margin: 0;
+        padding: 18px 20px;
+        span {
+            margin-left: 10px;
+            i,
+            img {
+                margin-left: 5px;
+            }
+        }
+        strong {
+            font-size: 20px;
+        }
+    }
+    .accordion {
+        .card {
+            margin-bottom: 0;
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+            .card-header {
+                cursor: pointer;
+                background-color: #c6cac8;
+                h2 {
+                    font-size: 20px;
+                    padding: 10px;
+                    font-weight: 600;
+                }
+            }
+            .card-body {
+                padding: 0;
+            }
+        }
+    }
+    .center {
+        margin: -20px 0;
+        img {
+            width: calc(100%/2);
+            margin: 20px auto;
+        }
+        p {
+            color: #000;
+        }
+        .badge {
+            color: #7b7b7b;
+            font-size: 30px;
+            display: inline-block;
+            width: 100%;
+            background-color: #FFB946;
+            padding: 5px 5px;
+            text-align: center;
+            font-weight: 100;
+        }
+    }
+    .bottom {
+        margin: -16px 0 0 0;
+        .badge {
+            background: #FFB946;
+            border-radius: 0;
+            width: 30%;
+            color: #7b7b7b;
+            font-size: 15px;
+            padding: 10px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        p {
+            text-align: right;
+            color: #7b7b7b;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            i {
+                margin-left: 5px;
+            }
         }
     }
 }
