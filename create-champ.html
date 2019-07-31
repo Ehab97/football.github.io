@@ -53,59 +53,13 @@
                     <div class="col-12">
                         <ul class="nav  justify-content-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="create-player.html">اضافة لاعب</a>
+                                <a class="nav-link active" href="#">اضافة لاعب</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  active" href="view-players.html">عرض اللاعبين</a>
+                                <a class="nav-link" href="#">عرض اللاعبين</a>
                             </li>
 
                         </ul>
-                    </div>
-                    <div class="col-12">
-                        <form class="form-inline mb-4 text-center">
-                            <div class="m-auto">
-                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-dark" type="submit">بحث</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-12">
-                        <table class="table table-striped table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">اسم اللاعب</th>
-                                    <th scope="col">الفريق</th>
-                                    <th scope="col">الحاله</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr v-for="i in 10" ::key="i">
-                                    <th scope="row">{{i}}</th>
-                                    <td>احمد محمد</td>
-                                    <td>الاهلي</td>
-
-                                    <td>
-                                        <a href="modfy-player.html"><button class="btn btn-outline-info">تعديل</button></a>
-                                        <a href="show-player.html"><button class="btn btn-outline-info">عرض</button></a>
-                                        <a href="#"><button class="btn btn-outline-danger">حذف</button></a>
-                                    </td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-12 text-center">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item"><a class="page-link" href="#">السابق</a></li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">التالي</a></li>
-                            </ul>
-                        </nav>
                     </div>
                 </div>
             </div>

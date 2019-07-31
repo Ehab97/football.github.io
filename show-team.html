@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="shortcut icon" href="images/favicon/logo.png">
+    <title>Admin</title>
+</head>
+
+<body>
+    <main id="app">
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">KSAKORA</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="create-player.html">اللاعبين</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="create-team.html">الفرق</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="create-champ.html">البطولات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">تسجيل الخروج <i class="fa fa-user-circle-o ml-2"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- selection process -->
+        <div class="select team ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav  justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="create-team.html">اضافة فريق</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="view-teams.html">عرض  الفريق</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <div class="form team ">
+                            <div class="row">
+                                <div class="col-12 tsc">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img src="imgaes/bg/fcb.png" class="card-img size" alt="fcb">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title"> اسم النادي : <strong>برشلونه</strong></h5>
+                                                    <p class="card-text"> تاريخ التاسيس : <strong>1899</strong></p>
+                                                    <p class="card-text"> الالقاب : <strong>95</strong> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="heading">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <h4>اضافة لاعب</h4>
+                                            </div>
+                                            <div class="col-9">
+                                                <hr/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <form action="" method="post">
+                                        <div class="form-group">
+                                            <label>اختر اللاعب</label>
+                                            <select class="form-control" name="" id="">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group text-center">
+                                            <button type="submit" class="btn btn-success">اضافه</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="col-12">
+                                    <div class="heading">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <h4>اللاعبين</h4>
+                                            </div>
+                                            <div class="col-9">
+                                                <hr/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <form class="form-inline mb-4 text-center">
+                                        <div class="m-auto">
+                                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                            <button class="btn btn-outline-dark" type="submit">بحث</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-12">
+                                    <table class="table table-striped table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">اسم اللاعب</th>
+
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr v-for="i in 10" ::key="i">
+                                                <th scope="row">{{i}}</th>
+                                                <td>احمد محمد</td>
+
+
+                                                <td>
+                                                    <a href="show-player.html"><button class="btn btn-outline-info">عرض</button></a>
+                                                    <a href="#"><button class="btn btn-outline-danger">حذف</button></a>
+                                                </td>
+
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-12">
+                                    <div class="heading">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <h4>البطولات احصائيات</h4>
+                                            </div>
+                                            <div class="col-9">
+                                                <hr/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="card">
+                                            <div class="card-header" id="headingOne">
+                                                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                                                    البطوله #1
+
+                                                </h2>
+                                            </div>
+
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <div class="statsics">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <span>
+                                                                                        <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                                                                                        الاهداف
+                                                                                    </span>
+                                                                <strong>
+                                                                                         100
+                                                                                     </strong>
+                                                            </div>
+                                                            <div class="col">
+                                                                <span>
+                                                                                           <img src="imgaes/favicon/icons8-ios-50.png" class="img-fluid">
+                                                                                            المباريات
+                                                                                        </span>
+                                                                <strong>
+                                                                                             20
+                                                                                         </strong>
+                                                            </div>
+                                                            <div class="col">
+                                                                <span>
+                                                                                            <img src="imgaes/favicon/yc.png" class="img-fluid">
+                                                                                                الانذارات
+                                                                                            </span>
+                                                                <strong>
+                                                                                                 120
+                                                                                             </strong>
+                                                            </div>
+                                                            <div class="col">
+                                                                <span>
+                                                                                            <img src="imgaes/favicon/rc.png" class="img-fluid">
+                                                                                                    الطرد
+                                                                                                </span>
+                                                                <strong>
+                                                                                                     10
+                                                                                                 </strong>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <span>
+                                                                            <i class="fa fa-table" aria-hidden="true"></i>
+                                                                                                    الترتيب
+                                                                                                </span>
+                                                                <strong>
+                                                                                                     10
+                                                                                                 </strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingTwo">
+                                                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+                                                    البطوله #2
+
+                                                </h2>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <div class="statsics">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <span>
+                                                                                        <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                                                                                        الاهداف
+                                                                                    </span>
+                                                                <strong>
+                                                                                         100
+                                                                                     </strong>
+                                                            </div>
+                                                            <div class="col">
+                                                                <span>
+                                                                                           <img src="imgaes/favicon/icons8-ios-50.png" class="img-fluid">
+                                                                                            المباريات
+                                                                                        </span>
+                                                                <strong>
+                                                                                             20
+                                                                                         </strong>
+                                                            </div>
+                                                            <div class="col">
+                                                                <span>
+                                                                                            <img src="imgaes/favicon/yc.png" class="img-fluid">
+                                                                                                الانذارات
+                                                                                            </span>
+                                                                <strong>
+                                                                                                 120
+                                                                                             </strong>
+                                                            </div>
+                                                            <div class="col">
+                                                                <span>
+                                                                                            <img src="imgaes/favicon/rc.png" class="img-fluid">
+                                                                                                    الطرد
+                                                                                                </span>
+                                                                <strong>
+                                                                                                     10
+                                                                                                 </strong>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <span>
+                                                                            <i class="fa fa-table" aria-hidden="true"></i>
+                                                                                                    الترتيب
+                                                                                                </span>
+                                                                <strong>
+                                                                                                     10
+                                                                                                 </strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingThree">
+                                                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+                                                    البطوله #3
+
+                                                </h2>
+                                            </div>
+                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <div class="statsics">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <span>
+                                                                                        <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                                                                                        الاهداف
+                                                                                    </span>
+                                                                <strong>
+                                                                                         100
+                                                                                     </strong>
+                                                            </div>
+                                                            <div class="col">
+                                                                <span>
+                                                                                           <img src="imgaes/favicon/icons8-ios-50.png" class="img-fluid">
+                                                                                            المباريات
+                                                                                        </span>
+                                                                <strong>
+                                                                                             20
+                                                                                         </strong>
+                                                            </div>
+                                                            <div class="col">
+                                                                <span>
+                                                                                            <img src="imgaes/favicon/yc.png" class="img-fluid">
+                                                                                                الانذارات
+                                                                                            </span>
+                                                                <strong>
+                                                                                                 120
+                                                                                             </strong>
+                                                            </div>
+                                                            <div class="col">
+                                                                <span>
+                                                                                            <img src="imgaes/favicon/rc.png" class="img-fluid">
+                                                                                                    الطرد
+                                                                                                </span>
+                                                                <strong>
+                                                                                                     10
+                                                                                                 </strong>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <span>
+                                                                            <i class="fa fa-table" aria-hidden="true"></i>
+                                                                                                    الترتيب
+                                                                                                </span>
+                                                                <strong>
+                                                                                                     10
+                                                                                                 </strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>جميع الحقوق محفوظه لموقع <a href="home.html">KSAKORA</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+</html>
