@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="shortcut icon" href="images/favicon/logo.png">
+    <title>ask</title>
+</head>
+
+<body>
+    <main id="app">
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">KSAKORA</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="create-player.html">اللاعبين</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="create-team.html">الفرق</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="create-ask.html">الاسئله</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">تسجيل الخروج <i class="fa fa-user-circle-o ml-2"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- selection process -->
+        <div class="select">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav  justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="create-ask.html">اضافة سوال</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="show-ask.html">عرض الاسئله</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">السوال</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="i in 10" ::key="i">
+                                    <th scope="row">{{i}}</th>
+                                    <td>اول كام كلمه من السوال</td>
+
+                                    <td class="text-center">
+                                        <a href="modfy-ask.html"><button class="btn btn-outline-info">تعديل</button></a>
+                                        <a href="ask.html"><button class="btn btn-outline-info">عرض</button></a>
+                                        <a href="#"><button class="btn btn-outline-danger mt-2">حذف</button></a>
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>جميع الحقوق محفوظه لموقع <a href="home.html">KSAKORA</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+</html>

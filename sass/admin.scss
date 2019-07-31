@@ -97,6 +97,19 @@ body {
     }
 }
 
+.progress {
+    height: 25px;
+    padding: 0;
+    .progress-bar {
+        background-color: $sc;
+        color: $tc;
+        height: 100%;
+        padding: 5px 0;
+        font-size: 20px;
+        font-weight: 800;
+    }
+}
+
 //palyer
 .team {
     // background: #fff;

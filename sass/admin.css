@@ -102,6 +102,20 @@ body {
   margin: 40px 0px 0;
 }
 
+.progress {
+  height: 25px;
+  padding: 0;
+}
+
+.progress .progress-bar {
+  background-color: #3d3f41;
+  color: #FFB946;
+  height: 100%;
+  padding: 5px 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
 .team {
   margin: 40px 0;
 }
