@@ -76,6 +76,11 @@ body {
   color: #000;
 }
 
+table {
+  border: 2px solid #ededed;
+  margin: 15px auto;
+}
+
 .form {
   margin-bottom: 50px;
   border-radius: 10px;
@@ -114,6 +119,81 @@ body {
   padding: 5px 0;
   font-size: 20px;
   font-weight: 800;
+}
+
+.list-group {
+  justify-content: center;
+  display: flex;
+  padding: 0;
+}
+
+.list-group-item {
+  margin: 10px auto;
+  width: 90%;
+}
+
+.close {
+  opacity: 0.3;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: red;
+}
+
+.heading {
+  margin: 40px auto;
+}
+
+.heading h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.heading hr {
+  border: 2px solid #181817;
+}
+
+@media screen and (max-width: 590px) {
+  .heading hr {
+    width: 80%;
+    float: left;
+  }
+}
+
+.card-text {
+  padding-bottom: 15px;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.chosen-container-multi .chosen-choices {
+  background: #ededed;
+  min-height: 80px;
+  overflow: auto;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  width: 100% !important;
+}
+
+.chosen-container {
+  width: 100% !important;
 }
 
 .team {
@@ -487,5 +567,8 @@ footer p a:hover {
     width: calc(100%);
     margin-left: 0px;
     margin-bottom: 10px;
+  }
+  .chosen-container-multi .chosen-choices {
+    width: 100% !important;
   }
 }

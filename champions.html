@@ -167,20 +167,64 @@
                         </div>
                         <div class="col-12">
                             <div class="matches" id="champ">
+
+                                <ul class="list-unstyled">
+                                    <li class="liActive"><a href="#g" style="color: #fff;"> المجموعات</a></li>
+                                    <li><a href="#m">المباريات </a></li>
+                                    <li><a href="#e">الاحصائيات</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <!-- stages group order -->
+                        <div class="col-12">
+                            <div class="matches stages">
                                 <div class="row">
-                                    <div class="col-12">
-                                        <ul class="list-unstyled">
-                                            <li @click="s32=true;s16=false;s8=false;s4=false;s2=false;" class="liActive"><a href="#" style="color: #fff;">دور المجموعات</a></li>
-                                            <li @click="s32=false;s16=true;s8=false;s4=false;s2=false;"><a href="#">دور ال16</a></li>
-                                            <li @click="s32=false;s16=false;s8=true;s4=false;s2=false;"><a href="#">دور ال 8</a></li>
-                                            <li @click="s32=false;s16=false;s8=false;s4=true;s2=false;"><a href="#">نصف النهائ</a></li>
-                                            <li @click="s32=false;s16=false;s8=false;s4=false;s2=true;"><a href="#">النهائ</a></li>
-                                        </ul>
+                                    <div class="col-12 heading " id="g">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <h4>المجموعات</h4>
+                                            </div>
+                                            <div class="col-10">
+                                                <hr/>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12">
+                                        <div class="stage" style="overflow-x:auto;" v-for="(j,l) in 8" ::key="j">
+                                            <h5 class="mt-4 mb-4">المجموعه {{j}}</h5>
+                                            <table class="table table-striped">
+                                                <thead class="bg-dark">
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">اسم الفريق</th>
+                                                        <th scope="col">المباريات</th>
+                                                        <th scope="col">النقاط</th>
+                                                        <th scope="col">له</th>
+                                                        <th scope="col">عليه</th>
+                                                        <th scope="col">الاهداف</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr v-for="(i,m) in 4" ::key="i">
+                                                        <th scope="row">{{i}}</th>
+                                                        <td>الاهلي</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12" id="m">
                                         <div class="match">
                                             <!-- group stage -->
-                                            <div class="row" v-show="s32">
+                                            <div class="row">
                                                 <div class="col-12 mb-2 m-auto text-center backColor">
 
                                                     <div class="center">
@@ -240,14 +284,14 @@
                                                 <div class="col-12 mb-2 m-auto text-center backColor">
                                                     <div class="show">
                                                         <a href="#">
-                                                                المزيد
-                                                                <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-                                                            </a>
+                                                                        المزيد
+                                                                        <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                                                                    </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <!-- 16 stage -->
-                                            <div class="row" v-show="s16">
+                                            <div class="row">
                                                 <div class="col-12 mb-2 m-auto text-center backColor">
 
                                                     <div class="center">
@@ -307,14 +351,14 @@
                                                 <div class="col-12 mb-2 m-auto text-center backColor">
                                                     <div class="show">
                                                         <a href="#">
-                                                                    المزيد
-                                                                    <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-                                                                </a>
+                                                                            المزيد
+                                                                            <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <!-- 8 stage -->
-                                            <div class="row" v-show="s8">
+                                            <div class="row">
                                                 <div class="col-12 mb-2 m-auto text-center backColor">
 
                                                     <div class="center">
@@ -374,14 +418,14 @@
                                                 <div class="col-12 mb-2 m-auto text-center backColor">
                                                     <div class="show">
                                                         <a href="#">
-                                                                    المزيد
-                                                                    <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-                                                                </a>
+                                                                            المزيد
+                                                                            <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <!-- 4 stage -->
-                                            <div class="row" v-show="s4">
+                                            <div class="row">
                                                 <div class="col-12 mb-2 m-auto text-center backColor">
 
                                                     <div class="center">
@@ -441,7 +485,7 @@
 
                                             </div>
                                             <!-- finalstage -->
-                                            <div class="row" v-show="s2">
+                                            <div class="row">
                                                 <div class="col-12 mb-2 m-auto text-center backColor">
 
                                                     <div class="center">
@@ -503,409 +547,8 @@
                                         </div>
                                     </div>
 
-                                </div>
-                            </div>
-                        </div>
-                        <!-- stages group order -->
-                        <div class="col-12">
-                            <div class="matches stages" id="champ">
-                                <div class="row">
-                                    <div class="col-12 heading">
-                                        <div class="row">
-                                            <div class="col-2">
-                                                <h4>المجموعات</h4>
-                                            </div>
-                                            <div class="col-10">
-                                                <hr/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <ul class="list-unstyled">
-                                            <li @click="g1=true;g2=false;g3=false;g4=false;" class="liActive"><a href="#" style="color: #fff;">مجموعه 1 , 2</a></li>
-                                            <li @click="g1=false;g2=true;g3=false;g4=false;"><a href="#">مجموعه 3,4</a></li>
-                                            <li @click="g1=false;g2=false;g3=true;g4=false;"><a href="#">مجموعه5 ,6 </a></li>
-                                            <li @click="g1=false;g2=false;g3=false;g4=true;"><a href="#"> مجموعه 7,8  </a></li>
 
-                                        </ul>
-                                    </div>
-                                    <div class="col-12" v-show="g1">
-                                        <div class="stage">
-                                            <h5 class="mt-4 mb-4">المجموعه 1</h5>
-                                            <table class="table table-striped">
-                                                <thead class="bg-dark">
-                                                    <tr>
-                                                        <th scope="col">#</th>
-                                                        <th scope="col">الاسم</th>
-                                                        <th scope="col">النقاط</th>
-                                                        <th scope="col">الاهداف</th>
-                                                        <th scope="col">لعب</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">4</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="stage">
-                                            <h5 class="mt-4 mb-4">المجموعه 2</h5>
-                                            <table class="table table-striped">
-                                                <thead class="bg-dark">
-                                                    <tr>
-                                                        <th scope="col">#</th>
-                                                        <th scope="col">الاسم</th>
-                                                        <th scope="col">النقاط</th>
-                                                        <th scope="col">الاهداف</th>
-                                                        <th scope="col">لعب</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">4</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="col-12" v-show="g2">
-                                        <div class="stage">
-                                            <h5 class="mt-4 mb-4">المجموعه 3</h5>
-                                            <table class="table table-striped">
-                                                <thead class="bg-dark">
-                                                    <tr>
-                                                        <th scope="col">#</th>
-                                                        <th scope="col">الاسم</th>
-                                                        <th scope="col">النقاط</th>
-                                                        <th scope="col">الاهداف</th>
-                                                        <th scope="col">لعب</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">4</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="stage">
-                                            <h5 class="mt-4 mb-4">المجموعه 4</h5>
-                                            <table class="table table-striped">
-                                                <thead class="bg-dark">
-                                                    <tr>
-                                                        <th scope="col">#</th>
-                                                        <th scope="col">الاسم</th>
-                                                        <th scope="col">النقاط</th>
-                                                        <th scope="col">الاهداف</th>
-                                                        <th scope="col">لعب</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">4</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="col-12" v-show="g3">
-                                        <div class="stage">
-                                            <h5 class="mt-4 mb-4">المجموعه 5</h5>
-                                            <table class="table table-striped">
-                                                <thead class="bg-dark">
-                                                    <tr>
-                                                        <th scope="col">#</th>
-                                                        <th scope="col">الاسم</th>
-                                                        <th scope="col">النقاط</th>
-                                                        <th scope="col">الاهداف</th>
-                                                        <th scope="col">لعب</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">4</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="stage">
-                                            <h5 class="mt-4 mb-4">المجموعه 6</h5>
-                                            <table class="table table-striped">
-                                                <thead class="bg-dark">
-                                                    <tr>
-                                                        <th scope="col">#</th>
-                                                        <th scope="col">الاسم</th>
-                                                        <th scope="col">النقاط</th>
-                                                        <th scope="col">الاهداف</th>
-                                                        <th scope="col">لعب</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">4</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="col-12" v-show="g4">
-                                        <div class="stage">
-                                            <h5 class="mt-4 mb-4">المجموعه 7</h5>
-                                            <table class="table table-striped">
-                                                <thead class="bg-dark">
-                                                    <tr>
-                                                        <th scope="col">#</th>
-                                                        <th scope="col">الاسم</th>
-                                                        <th scope="col">النقاط</th>
-                                                        <th scope="col">الاهداف</th>
-                                                        <th scope="col">لعب</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">4</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="stage">
-                                            <h5 class="mt-4 mb-4">المجموعه 8</h5>
-                                            <table class="table table-striped">
-                                                <thead class="bg-dark">
-                                                    <tr>
-                                                        <th scope="col">#</th>
-                                                        <th scope="col">الاسم</th>
-                                                        <th scope="col">النقاط</th>
-                                                        <th scope="col">الاهداف</th>
-                                                        <th scope="col">لعب</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">4</th>
-                                                        <td>مصر</td>
-                                                        <td>8</td>
-                                                        <td>14</td>
-                                                        <td>3</td>
-
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 heading">
+                                    <div class="col-12 heading sta">
                                         <div class="row">
                                             <div class="col-2">
                                                 <h4>الهدافين</h4>
@@ -915,9 +558,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-12 sta">
                                         <div class="row text-center">
-                                            <div class="col-md-3 col-xs-12" v-for="i in 4" ::key="i">
+                                            <div class="col-md-3 col-xs-12" v-for="(i,n) in 4" ::key="i">
                                                 <div class="card">
                                                     <img src="imgaes/about/iconfinder_user_male2_172626.png" class="card-img-top" alt="...">
                                                     <div class="card-body">
@@ -931,7 +574,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="col-12 heading">
+                                    <div class="col-12 heading sta">
                                         <div class="row">
                                             <div class="col-2">
                                                 <h4>كلين شيت</h4>
@@ -941,9 +584,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-12 sta">
                                         <div class="row text-center">
-                                            <div class="col-md-3 col-xs-12" v-for="i in 4" ::key="i">
+                                            <div class="col-md-3 col-xs-12" v-for="(i,n) in 4" ::key="i">
                                                 <div class="card">
                                                     <img src="imgaes/about/iconfinder_user_male2_172626.png" class="card-img-top" alt="...">
                                                     <div class="card-body">
