@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/chosen.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="shortcut icon" href="images/favicon/logo.png">
+    <title>Admin</title>
+</head>
+
+<body>
+    <main id="app">
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">KSAKORA</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="create-champ.html">البطولات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">تسجيل الخروج <i class="fa fa-user-circle-o ml-2"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- selection process -->
+        <div class="select">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav  justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="create-champ.html">عمل بطوله </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="show-champ.html">عرض البطولات</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <form action="" class="form col-12">
+                                <div class="row">
+                                    <div class="form-group col-md-8 col-xs-12 m-auto">
+                                        <label>اسم البطوله</label>
+                                        <input type="text" name="" id="" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="form-group  col-md-8 col-xs-12 m-auto mt-2 mb-2">
+                                        <label>عدد الرعاء</label>
+                                        <input type="text" name="" id="spon" class="form-control" placeholder="0">
+                                    </div>
+                                    <div class="form-group  col-12 text-center mt-2 mb-5">
+                                        <button class="btn btn-outline-success" id="count" type="button">اضافه</button>
+                                    </div>
+                                    <div id="content" class="col-12">
+                                        <div class="row">
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group  col-md-8 col-xs-12 m-auto mt-5 mb-5">
+                                        <label style="display: block;margin-bottom: 15px;">اضافة الانديه  </label>
+                                        <select class="teams form-control" multiple="true" placeholder="اختر الفرق">
+                                            <option value="Afghanistan">Afghanistan</option>
+                                            <option value="Andorra">Andorra</option>
+                                            <option value="Angola">Angola</option>
+                                            <option value="Anguilla">Anguilla</option>
+                                            <option value="Antartica">Antartica</option>
+                                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                            <option v-bind:value="'value'+i" v-for="i in 20" ::key="i"> team</option>
+                                    </select>
+
+                                    </div>
+                                    <div class="form-group  col-md-8 col-xs-12 m-auto mt-2 mb-2">
+                                        <label>عدد مجموعات التصنيف</label>
+                                        <input type="text" name="" id="spon2" class="form-control" placeholder="0">
+                                    </div>
+                                    <div class="form-group  col-12 text-center mt-2 mb-5">
+                                        <button class="btn btn-outline-success" id="count2" type="button">اضافه</button>
+                                    </div>
+                                    <div id="content2" class="col-12">
+                                        <div class="row">
+                                            <div class="col-md-4 col-xs-12">
+                                                <div class="card">
+                                                    <h3 class="p-2">التصنيف A</h3>
+                                                    <h5 class="card-header">
+                                                        <div class="form-group">
+                                                            <button class="btn btn-outline-info float-left mb-2" style="height: 55px !important;">اضافه</button>
+                                                            <select class="form-control float-right" style="width: 70%;" name="">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                            </select>
+                                                        </div>
+                                                    </h5>
+                                                    <div class="card-text">
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item list-group-item-info" v-for="(i,j) in 4" ::key="i">
+                                                                <span>اسم الفريق</span>
+                                                                <a href="#" class="close"></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                                <!-- <div class="group">
+
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 heading " id="g">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <h4>المجموعات</h4>
+                                            </div>
+                                            <div class="col-10">
+                                                <hr/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group  col-md-8 col-xs-12 m-auto mt-2 mb-2">
+                                        <label>عدد المجموعات للفرق  </label>
+                                        <input type="text" name="" id="spon2" class="form-control" placeholder="0">
+                                    </div>
+                                    <div class="form-group  col-12 text-center mt-2 mb-5">
+                                        <button class="btn btn-outline-success" id="count2" type="button">انشاء</button>
+                                    </div>
+                                    <div class="form-group  col-12 text-center mt-2">
+                                        <!-- <button class="btn btn-outline-success" type="submit">يدوي</button> -->
+                                        <a href="create-group-manuel.html" class="btn btn-outline-success">يدوي</a>
+                                        <!-- <button class="btn btn-outline-success" type="submit">اوتوماتيك</button> -->
+                                        <a href="create-group-dynamic.html" class="btn btn-outline-success">اوتوماتيك</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>جميع الحقوق محفوظه لموقع <a href="home.html">KSAKORA</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/chosen.jquery.min.js"></script>
+    <!-- <script src="js/chosen.proto.min.js"></script> -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+
+</html>

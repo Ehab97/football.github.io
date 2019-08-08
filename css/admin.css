@@ -121,6 +121,10 @@ table {
       font-weight: 900;
       width: 100%; }
 
+.select .table th,
+.select .table td {
+  border: 2px solid #ededed; }
+
 .list-group {
   justify-content: center;
   display: flex;
