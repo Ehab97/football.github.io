@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
-    <link rel="stylesheet" href="css/champ.css">
+    <link rel="stylesheet" href="css/teams.css">
     <link rel="shortcut icon" href="images/favicon/logo.png">
-    <title>اسم البطوله</title>
+    <title>اللاعب</title>
 </head>
 
 <body class="container">
@@ -75,266 +75,211 @@
         <div class="heading">
             <div class="row">
                 <div class="col-2">
-                    <h4>اسم البطوله</h4>
+                    <h4>اللاعب </h4>
                 </div>
                 <div class="col-10">
                     <hr/>
                 </div>
             </div>
         </div>
-        <div class="sponsor">
+        <div class="team">
             <div class="row">
-                <div class="col-12 text-center mt-3 mb-3">
-                    <h4>
-                        هذه البطولة برعاية كلا من
-                    </h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col-xs-6 m-auto">
-                    <a href="#">
-                        <img src="imgaes/sponsor/nike_PNG8.png" alt="spnosr name">
-                    </a>
-                </div>
-                <div class="col-md-2  col-xs-6 m-auto">
-                    <a href="#">
-                        <img src="imgaes/sponsor/adidas_PNG19.png" alt="spnosr name">
-                    </a>
-                </div>
-                <div class="col-md-2  col-xs-6 m-auto">
-                    <a href="#">
-                        <img src="imgaes/sponsor/adidas_PNG22.png" alt="spnosr name">
-                    </a>
-                </div>
-                <div class="col-md-2  col-xs-6 m-auto">
-                    <a href="#">
-                        <img src="imgaes/sponsor/adidas_PNG19.png" alt="spnosr name">
-                    </a>
-                </div>
-                <div class="col-md-2  col-xs-6 m-auto">
-                    <a href="#">
-                        <img src="imgaes/sponsor/nike_PNG8.png" alt="spnosr name">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <section class="cards">
-            <div class="row">
-                <div class="col-md-8 col-xs-12">
+                <div class="col-md-8 col-xs-12 cc" style="background: #fff;margin-top: 35px;padding: 5px;">
                     <div class="row">
-                        <!-- statsics start -->
-                        <div class="col-12">
-                            <div class="statsics">
-                                <div class="row">
-                                    <div class="col">
-                                        <span>
-                                            <i class="fa fa-futbol-o" aria-hidden="true"></i>
-                                            الاهداف
-                                        </span>
-                                        <strong>
-                                             100
-                                         </strong>
+                        <div class="col-12 tsc">
+                            <div class="card mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="imgaes/about/iconfinder_user_male2_172626.png" class="card-img size" alt="fcb">
                                     </div>
-                                    <div class="col">
-                                        <span>
-                                               <img src="imgaes/favicon/icons8-ios-50.png" class="img-fluid">
-                                                المباريات
-                                            </span>
-                                        <strong>
-                                                 20
-                                             </strong>
-                                    </div>
-                                    <div class="col">
-                                        <span>
-                                                <img src="imgaes/favicon/yc.png" class="img-fluid">
-                                                    الانذارات
-                                                </span>
-                                        <strong>
-                                                     120
-                                                 </strong>
-                                    </div>
-                                    <div class="col">
-                                        <span>
-                                                <img src="imgaes/favicon/rc.png" class="img-fluid">
-                                                        الطرد
-                                                    </span>
-                                        <strong>
-                                                         10
-                                                     </strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="matches" id="champ">
-
-                                <ul class="list-unstyled">
-                                    <li class="liActive" @click="g1=true;g2=false;g3=false;"><a href="#g" style="color: #fff;"> المجموعات</a></li>
-                                    <li @click="g1=false;g2=true;g3=false;"><a href="#m">المباريات </a></li>
-                                    <li @click="g1=false;g2=false;g3=true;"><a href="#s">الاحصائيات</a></li>
-                                </ul>
-
-                            </div>
-                        </div>
-                        <!-- stages group order -->
-                        <div class="col-12">
-                            <div class="matches stages">
-                                <div class="row">
-                                    <div class="col-12 heading " id="g" v-show="g1">
-                                        <div class="row">
-                                            <div class="col-2">
-                                                <h4>المجموعات</h4>
-                                            </div>
-                                            <div class="col-10">
-                                                <hr/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12" v-show="g1">
-                                        <div class="stage" style="overflow-x:auto;" v-for="(j,l) in 8" ::key="j">
-                                            <h5 class="mt-4 mb-4">المجموعه {{j}}</h5>
-                                            <table class="table table-striped">
-                                                <thead class="bg-dark">
-                                                    <tr>
-                                                        <th scope="col">#</th>
-                                                        <th scope="col">اسم الفريق</th>
-                                                        <th scope="col">المباريات</th>
-                                                        <th scope="col">النقاط</th>
-                                                        <th scope="col">له</th>
-                                                        <th scope="col">عليه</th>
-                                                        <th scope="col">الاهداف</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr v-for="(i,m) in 4" ::key="i">
-                                                        <th scope="row">{{i}}</th>
-                                                        <td>الاهلي</td>
-                                                        <td>0</td>
-                                                        <td>0</td>
-                                                        <td>0</td>
-                                                        <td>0</td>
-                                                        <td>0</td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-12 heading " id="m" v-show="g2">
-                                        <div class="row">
-                                            <div class="col-2">
-                                                <h4>المباريات</h4>
-                                            </div>
-                                            <div class="col-10">
-                                                <hr/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12" v-show="g2">
-                                        <div class="match">
-                                            <!-- group stage -->
-                                            <div class="row">
-                                                <div class="col-12 mb-2 m-auto text-center backColor" v-for="(i,l) in 8" ::key="i">
-
-                                                    <div class="center">
-                                                        <div class="d-flex flex-nowrap centerlize">
-                                                            <div class="order-3 p-2">
-                                                                <a href="teams.html" style="text-decoration: none;">
-                                                                    <img src="imgaes/favicon/ger.png" alt="germany">
-                                                                </a>
-                                                                <p>الاسم</p>
-                                                            </div>
-                                                            <div class="order-2 p-2">
-                                                                <p class="badge badge-secondary">- : -</p>
-                                                            </div>
-                                                            <div class="order-1 p-2">
-                                                                <a href="teams.html" style="text-decoration: none;">
-                                                                    <img src="imgaes/favicon/ger.png" alt="germany">
-                                                                </a>
-                                                                <p>الاسم</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="badge badge-secondary">الحاله</span>
-                                                        <p>
-                                                            <i class="fa fa-calendar" aria-hidden="true"></i> التاريخ - الساعه
-                                                        </p>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 sta stas" v-show="g3">
-                                        <div class="row">
-                                            <div class="col-md-4 col-xs-12" v-for="(item,index) in arr" ::key="index">
-                                                <div class="card">
-                                                    <img src="imgaes/news/new1.jpg" class="card-img-top" alt="">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">{{item}}</h5>
-                                                        <p class="card-text">22</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 heading sta" id="s" v-show="g3">
-                                        <div class="row">
-                                            <div class="col-2">
-                                                <h4>الهدافين</h4>
-                                            </div>
-                                            <div class="col-10">
-                                                <hr/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 sta" v-show="g3">
-                                        <div class="row text-center">
-                                            <div class="col-md-3 col-xs-12" v-for="(i,n) in 4" ::key="i">
-                                                <div class="card">
-                                                    <img src="imgaes/about/iconfinder_user_male2_172626.png" class="card-img-top" alt="...">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">اسم الاعب</h5>
-                                                        <p class="card-text">اسم النادي</p>
-                                                        <p class="card-text">25 هدف</p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-12 heading sta" v-show="g3">
-                                        <div class="row">
-                                            <div class="col-2">
-                                                <h4>كلين شيت</h4>
-                                            </div>
-                                            <div class="col-10">
-                                                <hr/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 sta" v-show="g3">
-                                        <div class="row text-center">
-                                            <div class="col-md-3 col-xs-12" v-for="(i,n) in 4" ::key="i">
-                                                <div class="card">
-                                                    <img src="imgaes/about/iconfinder_user_male2_172626.png" class="card-img-top" alt="...">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">اسم الاعب</h5>
-                                                        <p class="card-text">اسم النادي</p>
-                                                        <p class="card-text"> 5 مباريات</p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title"> اسم اللاعب : <strong>احمد محمد</strong></h5>
+                                            <p class="card-text"> العمر : <strong>18</strong></p>
+                                            <p class="card-text"> الفريق : <strong>الاتحاد</strong></p>
+                                            <p class="card-text"> المركز : <strong>خط وسط</strong> </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12">
+                            <div class="heading">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4> احصائيات في البطولات </h4>
+                                    </div>
+                                    <div class="col-9">
+                                        <hr/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                                            البطوله #1
+
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="statsics">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <span>
+                                                                        <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                                                                        الاهداف
+                                                                    </span>
+                                                        <strong>
+                                                                         100
+                                                                     </strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <span>
+                                                                           <img src="imgaes/favicon/icons8-ios-50.png" class="img-fluid">
+                                                                            المباريات
+                                                                        </span>
+                                                        <strong>
+                                                                             20
+                                                                         </strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <span>
+                                                                            <img src="imgaes/favicon/yc.png" class="img-fluid">
+                                                                                الانذارات
+                                                                            </span>
+                                                        <strong>
+                                                                                 120
+                                                                             </strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <span>
+                                                                            <img src="imgaes/favicon/rc.png" class="img-fluid">
+                                                                                    الطرد
+                                                                                </span>
+                                                        <strong>
+                                                                                     10
+                                                                                 </strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+                                            البطوله #2
+
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="statsics">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <span>
+                                                                        <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                                                                        الاهداف
+                                                                    </span>
+                                                        <strong>
+                                                                         100
+                                                                     </strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <span>
+                                                                           <img src="imgaes/favicon/icons8-ios-50.png" class="img-fluid">
+                                                                            المباريات
+                                                                        </span>
+                                                        <strong>
+                                                                             20
+                                                                         </strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <span>
+                                                                            <img src="imgaes/favicon/yc.png" class="img-fluid">
+                                                                                الانذارات
+                                                                            </span>
+                                                        <strong>
+                                                                                 120
+                                                                             </strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <span>
+                                                                            <img src="imgaes/favicon/rc.png" class="img-fluid">
+                                                                                    الطرد
+                                                                                </span>
+                                                        <strong>
+                                                                                     10
+                                                                                 </strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+                                            البطوله #3
+
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="statsics">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <span>
+                                                                        <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                                                                        الاهداف
+                                                                    </span>
+                                                        <strong>
+                                                                         100
+                                                                     </strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <span>
+                                                                           <img src="imgaes/favicon/icons8-ios-50.png" class="img-fluid">
+                                                                            المباريات
+                                                                        </span>
+                                                        <strong>
+                                                                             20
+                                                                         </strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <span>
+                                                                            <img src="imgaes/favicon/yc.png" class="img-fluid">
+                                                                                الانذارات
+                                                                            </span>
+                                                        <strong>
+                                                                                 120
+                                                                             </strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <span>
+                                                                            <img src="imgaes/favicon/rc.png" class="img-fluid">
+                                                                                    الطرد
+                                                                                </span>
+                                                        <strong>
+                                                                                     10
+                                                                                 </strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-md-4 col-xs-12">
@@ -346,7 +291,7 @@
                                                 background: #000c;
                                                 text-align: right;
                                                 border-radius: 0;
-                                                padding: 10px;"> تصنيف في البطوله</span></h1>
+                                                padding: 10px;"> تصنيف الاحياء في جده</span></h1>
                             </a>
                         </div>
                         <div class="col-12">
@@ -419,17 +364,17 @@
                         <div class="col-12">
 
 
-                            <a href="news.html">
+                            <a href="articles.html">
                                 <h1><span class="badge badge-secondary" style="    width: 100%;
                                                                 background: #000c;
                                                                 text-align: right;
                                                                 border-radius: 0;
-                                                                padding: 10px;">  اخبار البطوله</span></h1>
+                                                                padding: 10px;">  الاكثر قرائه</span></h1>
                             </a>
 
                         </div>
-                        <div class="col-12" v-for="index in 2" :key="index">
-                            <a href="news-view.html" style="text-decoration: none;direction: ltr;">
+                        <div class="col-12" v-for="index in 3" :key="index">
+                            <a href="articles-view.html" style="text-decoration: none;direction: ltr;">
                                 <div class="card mb-3">
                                     <div class="row no-gutters">
                                         <div class="col-md-3">
@@ -445,27 +390,6 @@
                                     </div>
                                 </div>
                             </a>
-                        </div>
-                        <div class="col-12">
-
-
-                            <a href="images.html">
-                                <h1><span class="badge badge-secondary" style="    width: 100%;
-                                                                    background: #000c;
-                                                                    text-align: right;
-                                                                    border-radius: 0;
-                                                                    padding: 10px;">  صور البطوله</span></h1>
-                            </a>
-
-                        </div>
-                        <div class="col-12" v-for="index in 2" :key="index">
-                            <a href="news-view.html" style="text-decoration: none;direction: ltr;">
-                                <div class="card">
-                                    <img src="imgaes/news/new.jpg" class="card-img-top">
-                                    <div class="card-body">
-                                        <p class="card-text" style="color:#000;">احدث صور البطوله.</p>
-                                    </div>
-                                </div </a>
                         </div>
                         <div class="col-12">
                             <div class="ads">
@@ -538,10 +462,8 @@
 
                     </div>
                 </div>
-
             </div>
-
-        </section>
+        </div>
         <footer id="footer">
             <div class="row">
                 <div class="col-12 col-xs-12  m-auto text-center">

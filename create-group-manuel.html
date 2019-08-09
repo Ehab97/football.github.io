@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/chosen.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="shortcut icon" href="images/favicon/logo.png">
+    <title>Admin</title>
+</head>
+
+<body>
+    <main id="app">
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">KSAKORA</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="create-champ.html">البطولات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">تسجيل الخروج <i class="fa fa-user-circle-o ml-2"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- selection process -->
+        <div class="select">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav  justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="create-champ.html">عمل بطوله </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="show-champ.html">عرض البطولات</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <form action="" method="post">
+                                    <!-- class="table-responsive-sm"  -->
+                                    <div style="overflow-x:auto;" v-for="j in 8" ::key="j">
+                                        <h3>المجموعه {{j}} </h3>
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">اسم الفريق</th>
+                                                    <th scope="col">المباريات</th>
+                                                    <th scope="col">النقاط</th>
+                                                    <th scope="col">له</th>
+                                                    <th scope="col">عليه</th>
+                                                    <th scope="col">الاهداف</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr v-for="i in 4" ::key="i">
+                                                    <th scope="row">{{i}}</th>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <input type="text" name="" class="form-control">
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <input type="text" name="" class="form-control">
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <input type="text" name="" class="form-control">
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <input type="text" name="" class="form-control">
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <input type="text" name="" class="form-control">
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <input type="text" name="" class="form-control">
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                        <div class="form-group text-center">
+
+                                            <button type="submit" class="btn btn-outline-success">اضافه</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>جميع الحقوق محفوظه لموقع <a href="home.html">KSAKORA</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/chosen.jquery.min.js"></script>
+    <!-- <script src="js/chosen.proto.min.js"></script> -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+
+</html>

@@ -19,11 +19,6 @@
 <body class="container">
     <main id="app">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="icon-bar" @click="icons =! icons;">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
             <a class="navbar-brand" href="home.html">KSAKORA</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -32,25 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" style="color:#fff;" href="home.html">الرئيسيه</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="news.html">الاخبار</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="articles.html">المقالات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="images.html">الصور</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="videos.html">الفيديوهات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="videos.html">الاعلان</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#footer">التواصل معنا</a>
+                        <a class="nav-link active" href="create-champ.html">البطولات</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.html">تسجيل الدخول <i class="fa fa-user-circle-o ml-2"></i></a>
@@ -120,7 +97,7 @@
         </div>
         <section class="cards">
             <div class="row">
-                <div class="col-md-8 col-xs-12">
+                <div class="col-12">
                     <div class="row">
                         <!-- statsics start -->
                         <div class="col-12">
@@ -337,209 +314,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-xs-12">
-                    <div class="row">
-                        <div class="col-12">
 
-                            <a href="#">
-                                <h1><span class="badge badge-secondary" style="    width: 100%;
-                                                background: #000c;
-                                                text-align: right;
-                                                border-radius: 0;
-                                                padding: 10px;"> تصنيف في البطوله</span></h1>
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex flex-nowrap" style="font-weight: bolder;">
-                                <div class="p-2 ml-auto">اسم الفريق</div>
-                                <div class="p-2">النقاط</div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <ol style="padding-right: 15px;">
-                                <li>
-                                    <div class="d-flex flex-nowrap">
-                                        <div class="p-2 ml-auto">اسم الفريق</div>
-                                        <div class="p-2">35</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex flex-nowrap">
-                                        <div class="p-2 ml-auto">اسم الفريق</div>
-                                        <div class="p-2">30</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex flex-nowrap">
-                                        <div class="p-2 ml-auto">اسم الفريق</div>
-                                        <div class="p-2">28</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex flex-nowrap">
-                                        <div class="p-2 ml-auto">اسم الفريق</div>
-                                        <div class="p-2">25</div>
-                                    </div>
-                                </li>
-                            </ol>
-                        </div>
-                        <div class="col-12 text-center">
-                            <a class="btn btn-dark" href="#">عرض المزيد</a>
-                        </div>
-                        <div class="col-12">
-
-
-                            <a href="articles.html">
-                                <h1><span class="badge badge-secondary" style="    width: 100%;
-                                                            background: #000c;
-                                                            text-align: right;
-                                                            border-radius: 0;
-                                                            padding: 10px;">    المقالات</span></h1>
-                            </a>
-
-                        </div>
-                        <div class="col-12" v-for="index in 3" :key="index">
-                            <a href="articles-view.html" style="text-decoration: none;direction: ltr;">
-                                <div class="card mb-3">
-                                    <div class="row no-gutters">
-                                        <div class="col-md-3">
-                                            <img src="imgaes/news/pep.jpg" style=" border-radius: 0 ;" class="card-img" alt="...">
-                                        </div>
-                                        <div class="col-md-9">
-                                            <div class="card-body">
-                                                <h5 class="card-title" style="color:#868e96;font-size: 16px;">ااسم صحاب المقال</h5>
-                                                <p class="card-text" style="color:#868e96;font-size: 14px;">صفقه من العيار الثقيل</p>
-                                                <p class="card-text" style="font-size: 13px;"><small class="text-muted">من خمس دقائث</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-12">
-
-
-                            <a href="news.html">
-                                <h1><span class="badge badge-secondary" style="    width: 100%;
-                                                                background: #000c;
-                                                                text-align: right;
-                                                                border-radius: 0;
-                                                                padding: 10px;">  اخبار البطوله</span></h1>
-                            </a>
-
-                        </div>
-                        <div class="col-12" v-for="index in 2" :key="index">
-                            <a href="news-view.html" style="text-decoration: none;direction: ltr;">
-                                <div class="card mb-3">
-                                    <div class="row no-gutters">
-                                        <div class="col-md-3">
-                                            <img src="imgaes/news/zid.jpg" style=" border-radius: 0 ;" class="card-img" alt="...">
-                                        </div>
-                                        <div class="col-md-9">
-                                            <div class="card-body">
-                                                <h5 class="card-title" style="color:#868e96;font-size: 16px;">العنوان</h5>
-                                                <p class="card-text" style="color:#868e96;font-size: 14px;">صفقه من العيار الثقيل</p>
-                                                <p class="card-text" style="font-size: 13px;"><small class="text-muted">من خمس دقائث</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-12">
-
-
-                            <a href="images.html">
-                                <h1><span class="badge badge-secondary" style="    width: 100%;
-                                                                    background: #000c;
-                                                                    text-align: right;
-                                                                    border-radius: 0;
-                                                                    padding: 10px;">  صور البطوله</span></h1>
-                            </a>
-
-                        </div>
-                        <div class="col-12" v-for="index in 2" :key="index">
-                            <a href="news-view.html" style="text-decoration: none;direction: ltr;">
-                                <div class="card">
-                                    <img src="imgaes/news/new.jpg" class="card-img-top">
-                                    <div class="card-body">
-                                        <p class="card-text" style="color:#000;">احدث صور البطوله.</p>
-                                    </div>
-                                </div </a>
-                        </div>
-                        <div class="col-12">
-                            <div class="ads">
-                                <a href="#">
-                                    <img src="imgaes/ads/ads3.gif" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12">
-
-
-                            <a href="articles.html">
-                                <h1><span class="badge badge-secondary" style="    width: 100%;
-                                                                    background: #000c;
-                                                                    text-align: right;
-                                                                    border-radius: 0;
-                                                                    padding: 10px;"> استطلاع راي</span></h1>
-                            </a>
-
-                        </div>
-                        <div class="col-12">
-
-
-                            <p class="mt-2 mb-2" style="font-weight: 600;">السوال ؟</p>
-
-                        </div>
-
-                        <div class="col-12">
-                            <form action="">
-                                <ul class="list-unstyled" style="    padding-right: 10px;">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="labeled">
-                                                ممتاز
-                                                        <input class="" type="radio" name="radio" value="1">
-                                                        <span class="checkmark"></span>   
-                                                    </label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="labeled">
-                                                    جيد جدا
-                                                            <input class="" type="radio" name="radio" value="2">
-                                                            <span class="checkmark"></span>   
-                                                        </label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="labeled">
-                                                       جيد
-                                                                <input class="" type="radio" name="radio" value="3">
-                                                                <span class="checkmark"></span>   
-                                                            </label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="labeled">
-                                                            غير مقبول
-                                                                    <input class="" type="radio" name="radio" value="4">
-                                                                    <span class="checkmark"></span>   
-                                                                </label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
 
         </section>
         <footer id="footer">

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/admin.css">
     <link rel="shortcut icon" href="images/favicon/logo.png">
-    <title>ask</title>
+    <title>Admin</title>
 </head>
 
 <body>
@@ -28,14 +28,9 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="create-player.html">اللاعبين</a>
-                        </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="create-team.html">الفرق</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="create-ask.html">الاسئله</a>
+                            <a class="nav-link" href="create-champ.html">البطولات</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="login.html">تسجيل الخروج <i class="fa fa-user-circle-o ml-2"></i></a>
@@ -47,16 +42,16 @@
             </div>
         </nav>
         <!-- selection process -->
-        <div class="select">
+        <div class="select team ">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <ul class="nav  justify-content-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="create-ask.html">اضافة سوال</a>
+                                <a class="nav-link" href="create-champ.html">عمل بطوله </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="show-ask.html">عرض الاسئله</a>
+                                <a class="nav-link active" href="show-champ.html">عرض البطولات</a>
                             </li>
 
                         </ul>
@@ -66,25 +61,37 @@
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">السوال</th>
+                                    <th scope="col">اسم البطوله</th>
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr v-for="i in 10" ::key="i">
                                     <th scope="row">{{i}}</th>
-                                    <td>اول كام كلمه من السوال</td>
+                                    <td>جده</td>
 
                                     <td class="text-center">
-                                        <a href="modfy-ask.html"><button class="btn btn-outline-info">تعديل</button></a>
-                                        <a href="ask.html"><button class="btn btn-outline-info">عرض</button></a>
-                                        <a href="#"><button class="btn btn-outline-danger">حذف</button></a>
+                                        <a href="modfy-team.html"><button class="btn btn-outline-info">تعديل</button></a>
+
+                                        <a href="show-team.html"><button class="btn btn-outline-info">عرض</button></a>
+                                        <a href="#"><button class="btn btn-outline-danger mt-2">حذف</button></a>
                                     </td>
 
 
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <div class="col-12 text-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>

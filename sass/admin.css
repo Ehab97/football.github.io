@@ -76,6 +76,11 @@ body {
   color: #000;
 }
 
+table {
+  border: 2px solid #ededed;
+  margin: 15px auto;
+}
+
 .form {
   margin-bottom: 50px;
   border-radius: 10px;
@@ -114,6 +119,144 @@ body {
   padding: 5px 0;
   font-size: 20px;
   font-weight: 800;
+}
+
+.search {
+  margin: 25px 0;
+}
+
+.search .field {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.matches .match {
+  margin: 30px 0;
+  padding: 20px 5px;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
+  text-align: center;
+  position: relative;
+}
+
+.matches .match img {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 15px;
+}
+
+.matches .match h6 {
+  text-align: center;
+}
+
+.matches .match .center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.matches .match .center .col-2 {
+  padding: 0;
+}
+
+.matches .match .center .form-control {
+  text-align: center;
+  font-weight: 900;
+}
+
+.matches .match .center ::placeholder {
+  color: #000;
+}
+
+.matches .match .center p {
+  font-size: 40px;
+  text-align: center !important;
+  font-weight: 900;
+  width: 100%;
+}
+
+.select .table th,
+.select .table td {
+  border: 2px solid #ededed;
+}
+
+.list-group {
+  justify-content: center;
+  display: flex;
+  padding: 0;
+}
+
+.list-group-item {
+  margin: 10px auto;
+  width: 90%;
+}
+
+.close {
+  opacity: 0.3;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: red;
+}
+
+.heading {
+  margin: 40px auto;
+}
+
+.heading h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.heading hr {
+  border: 2px solid #181817;
+}
+
+@media screen and (max-width: 590px) {
+  .heading hr {
+    width: 80%;
+    float: left;
+  }
+}
+
+.card-text {
+  padding-bottom: 15px;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.chosen-container-multi .chosen-choices {
+  background: #ededed;
+  min-height: 80px;
+  overflow: auto;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  width: 100% !important;
+}
+
+.chosen-container {
+  width: 100% !important;
 }
 
 .team {
@@ -487,5 +630,12 @@ footer p a:hover {
     width: calc(100%);
     margin-left: 0px;
     margin-bottom: 10px;
+  }
+  .chosen-container-multi .chosen-choices {
+    width: 100% !important;
+  }
+  .matches .match img {
+    width: 80px;
+    height: 80px;
   }
 }

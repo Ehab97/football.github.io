@@ -70,6 +70,13 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     };
+    //
+    $(function() {
+        $(".teams").chosen({ rtl: true });
+        $(".team-slec").chosen({ rtl: true });
+
+    });
+    //
     $('.carousel').carousel({
         interval: 4000
     });
@@ -114,16 +121,11 @@ new Vue({
         yaster: false,
         live: false,
         icons: false,
-        s32: true,
-        s16: false,
-        s8: false,
-        s4: false,
-        s2: false,
         g1: true,
         g2: false,
         g3: false,
-        g4: false,
         j: 5,
+        arr: ['مباريات', 'اهداف', 'كروت حمراء', 'كروت صفراء', 'ضربات جزاء'],
         addSta: false,
         text: false
     },
@@ -135,6 +137,7 @@ new Vue({
         decrement() {
             this.j -= 5;
         }
+
     },
 
 });
