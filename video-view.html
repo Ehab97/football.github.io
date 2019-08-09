@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/videos.css">
+    <link rel="shortcut icon" href="images/favicon/logo.png">
+    <title>مشاهة الفيديو</title>
+</head>
+
+<body class="container">
+    <main id="app">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="icon-bar" @click="icons =! icons;">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <a class="navbar-brand" href="home.html">KSAKORA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:#fff;" href="home.html">الرئيسيه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">الاخبار</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articles.html">المقالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="images.html">الصور</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="videos.html">الفيديوهات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="videos.html">الاعلان</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">التواصل معنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">تسجيل الدخول <i class="fa fa-user-circle-o ml-2"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </nav>
+        <div class="champions" v-show="icons">
+            <div class="row">
+                <div class="col-12">
+                    <h5>البطولات</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">اسم البطوله</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="heading">
+            <div class="row">
+                <div class="col-2">
+                    <h4>الفيديو مشاهدة</h4>
+                </div>
+                <div class="col-10">
+                    <hr/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center mt-3">
+                <h4 style="font-weight: 600;margin: 25px 0;">عنوان الفيديو</h4>
+            </div>
+            <div class="col-12">
+                <iframe width="100%" height="700px" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <!-- <video width="100%" height="700px" controls>
+                        <source src="https://www.youtube.com/embed/tgbNymZ7vqY" type="video/mp4">
+                        <source src="https://www.youtube.com/embed/tgbNymZ7vqY" type="video/ogg">
+                      Your browser does not support the video tag.
+                </video> -->
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="row">
+                <div class="col-12 col-xs-12  m-auto text-center">
+                    <form method="" action="" class="m-auto">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="" placeholder="الاسم">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="" placeholder="البريد الالكتوني">
+                        </div>
+                        <div class="form-group">
+
+                            <textarea class="form-control" name="" rows="3" placeholder="الرساله"></textarea>
+
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn">ارسال</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 text-center">
+                    <ul class="list-unstyled text-center">
+                        <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-snapchat-square fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="row">
+                    <div class="col-12">
+                        <p>جميع الحقوق محفوظه لموقع <a href="#">KSAKORA</a></p>
+                    </div>
+                    <div class="col-12">
+                        <ul class="list-unstyled p-0">
+                            <li><a href="#">اخبار</a></li>
+                            <li><a href="#">مقالات</a></li>
+                            <li><a href="#">صور</a></li>
+                            <li><a href="#">فيديوهات</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+</html>
