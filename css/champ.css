@@ -382,7 +382,9 @@ footer {
     .matches .match .center {
       margin: -20px 0; }
       .matches .match .center img {
-        width: calc(100%/2);
+        width: 90px;
+        height: 90px;
+        object-fit: contain;
         margin: 20px auto; }
       .matches .match .center p {
         color: #000; }
@@ -452,6 +454,21 @@ footer {
 .centerlize {
   justify-content: center;
   display: flex; }
+
+.stas .card {
+  text-align: center;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
+  min-height: 300px;
+  min-width: 200px; }
+  .stas .card .card-img-top {
+    width: 100%;
+    height: 210px;
+    border-radius: 0; }
+  .stas .card .card-body {
+    height: calc(100%/5); }
 
 .stages hr {
   border: 1px solid #FFB946;
