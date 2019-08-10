@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic,latin-ext");
 body {
   background-color: #d9d9d9;
@@ -5,10 +6,244 @@ body {
   direction: rtl;
 }
 
+.h {
+  width: 205px;
+  height: 145px !important;
+}
+
+.labeled {
+  position: relative;
+  width: 100%;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+.labeled input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.labeled .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.labeled:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.labeled input:checked ~ .checkmark {
+  background-color: #181817;
+}
+
+.labeled input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.labeled .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #FFB946;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.banner {
+  position: relative;
+  height: 200px;
+}
+
+.banner img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.banner a {
+  text-decoration: none;
+}
+
+.modal .modal-body img {
+  width: calc(95%);
+  object-fit: cover;
+}
+
+.champions {
+  background: #3d3f41;
+  padding: 25px 20px;
+  color: #d9d9d9;
+}
+
+.champions ul a {
+  text-decoration: none;
+  color: #d9d9d9;
+}
+
+.champions ul a li::before {
+  content: "•";
+  color: #ededed;
+}
+
 @media screen and (max-width: 590px) {
   .container {
     width: 100%;
   }
+  footer form {
+    width: 95%;
+  }
+  .h {
+    width: 100%;
+    height: 100% !important;
+  }
+}
+
+footer {
+  background-color: #3d3f41;
+}
+
+footer form {
+  width: 65%;
+}
+
+footer form .form-control {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding: .7rem 1.2rem;
+  font-size: .99999rem;
+  line-height: 1.25;
+  color: #181817 !important;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 590px) {
+  footer form {
+    width: 90%;
+  }
+  footer .btn {
+    min-width: calc(100% / 3);
+  }
+  footer .copy ul li:not(:nth-child(1))::before {
+    width: 0;
+  }
+  footer .list-unstyled {
+    padding-right: 15px !important;
+  }
+}
+
+footer .btn {
+  cursor: pointer;
+  padding: 5px 20px;
+  background: #181817;
+  border: 1px solid #FFB946;
+  -webkit-box-sizing: border-box;
+  font-weight: 600;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #737372;
+  -webkit-transition: 0.66s ease-out;
+  -moz-transition: 0.66s ease-out;
+  -o-transition: 0.66s ease-out;
+  transition: 0.66s ease-out;
+  min-width: calc(100% / 4);
+  padding: 15px;
+  margin-top: 25px;
+}
+
+footer ul {
+  padding-right: 15px;
+  justify-content: center;
+  display: flex;
+}
+
+footer ul li {
+  margin-left: 15px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #737372;
+}
+
+footer ul li a:hover {
+  color: #fff;
+  transition: .3s ease-in;
+}
+
+.copy {
+  background-color: #181817;
+  padding: 10px 0 0 0;
+}
+
+.copy p {
+  color: #737372;
+  text-align: center;
+}
+
+.copy p a {
+  margin-right: 10px;
+  color: #FFB946;
+  text-decoration: none;
+}
+
+.copy ul {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.copy ul li:not(:nth-child(1))::before {
+  content: "|";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #FFB946;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: 10px;
+  /* Also needed for space (tweak if needed) */
+}
+
+.copy ul li a {
+  color: #737372;
+  text-decoration: none;
+}
+
+.copy ul li a:hover {
+  color: #fff;
 }
 
 .bg-dark {
@@ -24,6 +259,43 @@ body {
   transition: .3s ease-in;
 }
 
+.bg-dark .navbar-brand {
+  color: #FFB946;
+}
+
+.bg-dark .navbar-brand:hover {
+  color: #FFB946;
+}
+
+.bg-dark .icon-bar {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bg-dark .icon-bar .bar1,
+.bg-dark .icon-bar .bar2,
+.bg-dark .icon-bar .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #FFB946;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.bg-dark .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.bg-dark .change .bar2 {
+  opacity: 0;
+}
+
+.bg-dark .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
 .heading {
   margin: 40px auto;
 }
@@ -37,28 +309,63 @@ body {
   border: 2px solid #181817;
 }
 
+@media screen and (max-width: 590px) {
+  .heading hr {
+    width: 80%;
+    float: left;
+  }
+}
+
 .articles {
+  margin-bottom: 25px;
+}
+
+.articles a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
+.articles a .card {
   margin: 40px 0;
 }
 
-.articles .ads {
+.articles a .card .ads {
   margin: 25px 0;
 }
 
-.articles .badge {
+.articles a .card .badge {
   font-size: 60%;
   margin-top: 35px;
 }
 
-.articles a {
+.articles a .card a {
   text-decoration: none !important;
 }
 
-.articles h1 {
+.articles a .card h1 {
   font-weight: 300;
 }
 
-.articles .card {
+.articles a .card a {
+  color: #d9d9d9;
+}
+
+.articles a .card a .card {
+  box-shadow: 0 1px 9px -6px;
+  border-radius: 0;
+}
+
+.articles a .card a .card .card-body {
+  direction: rtl;
+}
+
+.articles a .card a .card .card-img,
+.articles a .card a .card img {
+  height: 100%;
+}
+
+.articles a .card .card {
   float: left;
   padding: 0;
   width: calc(100%);
@@ -66,30 +373,30 @@ body {
   margin-bottom: 35px;
 }
 
-.articles .card .menu-content {
+.articles a .card .card .menu-content {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.articles .card .menu-content::before, .articles .card .menu-content::after {
+.articles a .card .card .menu-content::before, .articles a .card .card .menu-content::after {
   content: '';
   display: table;
 }
 
-.articles .card .menu-content::after {
+.articles a .card .card .menu-content::after {
   clear: both;
 }
 
-.articles .card .menu-content li {
+.articles a .card .card .menu-content li {
   display: inline-block;
 }
 
-.articles .card .menu-content a {
+.articles a .card .card .menu-content a {
   color: #fff;
 }
 
-.articles .card .menu-content span {
+.articles a .card .card .menu-content span {
   position: absolute;
   left: 50%;
   top: 0;
@@ -99,7 +406,7 @@ body {
   transform: translate(-50%, 0);
 }
 
-.articles .card .wrapper {
+.articles a .card .card .wrapper {
   background-color: fff;
   min-height: 400px;
   position: relative;
@@ -107,8 +414,8 @@ body {
   box-shadow: 0 1px 9px -6px;
 }
 
-.articles .card .wrapper img,
-.articles .card .wrapper video {
+.articles a .card .card .wrapper img,
+.articles a .card .card .wrapper video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -116,15 +423,15 @@ body {
   opacity: 0.75555;
 }
 
-.articles .card .wrapper video {
+.articles a .card .card .wrapper video {
   cursor: pointer;
 }
 
-.articles .card .wrapper:hover .data {
+.articles a .card .card .wrapper:hover .data {
   transform: translateY(0);
 }
 
-.articles .card .data {
+.articles a .card .card .data {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -132,83 +439,83 @@ body {
   transition: transform 0.3s;
 }
 
-.articles .card .data .content {
+.articles a .card .card .data .content {
   padding: 1em;
   position: relative;
   z-index: 1;
 }
 
-.articles .card .author {
+.articles a .card .card .author {
   font-size: 12px;
 }
 
-.articles .card .title {
+.articles a .card .card .title {
   margin-top: 10px;
 }
 
-.articles .card .text {
+.articles a .card .card .text {
   height: 70px;
   margin: 0;
 }
 
-.articles .card input[type='checkbox'] {
+.articles a .card .card input[type='checkbox'] {
   display: none;
 }
 
-.articles .card input[type='checkbox']:checked + .menu-content {
+.articles a .card .card input[type='checkbox']:checked + .menu-content {
   transform: translateY(-60px);
 }
 
-.articles .example-2 .wrapper:hover .menu-content span {
+.articles a .card .example-2 .wrapper:hover .menu-content span {
   transform: translate(-50%, -10px);
   opacity: 1;
 }
 
-.articles .example-2 .header {
+.articles a .card .example-2 .header {
   color: #fff;
   padding: 1em;
 }
 
-.articles .example-2 .header::before, .articles .example-2 .header::after {
+.articles a .card .example-2 .header::before, .articles a .card .example-2 .header::after {
   content: '';
   display: table;
 }
 
-.articles .example-2 .header::after {
+.articles a .card .example-2 .header::after {
   clear: both;
 }
 
-.articles .example-2 .header .date {
+.articles a .card .example-2 .header .date {
   font-weight: 600;
   position: absolute;
   left: 0;
   font-size: 14px;
 }
 
-.articles .example-2 .menu-content {
+.articles a .card .example-2 .menu-content {
   float: right;
 }
 
-.articles .example-2 .menu-content li {
+.articles a .card .example-2 .menu-content li {
   margin: 0 5px;
   position: relative;
 }
 
-.articles .example-2 .menu-content span {
+.articles a .card .example-2 .menu-content span {
   transition: all 0.3s;
   opacity: 0;
 }
 
-.articles .example-2 .data {
+.articles a .card .example-2 .data {
   color: #fff;
   transform: translateY(calc(70px + 4em));
 }
 
-.articles .example-2 .title a {
+.articles a .card .example-2 .title a {
   color: #fff;
 }
 
-.articles .example-2 .button {
+.articles a .card .example-2 .button {
   display: block;
   width: 100px;
   margin: 2em auto 1em;
@@ -220,7 +527,7 @@ body {
   font-weight: 700;
 }
 
-.articles .example-2 .button::after {
+.articles a .card .example-2 .button::after {
   content: '\2192';
   opacity: 0;
   position: absolute;
@@ -230,12 +537,30 @@ body {
   transition: all 0.3s;
 }
 
-.articles .example-2 .button:hover::after {
+.articles a .card .example-2 .button:hover::after {
   transform: translate(5px, -50%);
   opacity: 1;
 }
 
-.articles .ads img {
+.articles a .card .ads img {
   max-width: calc(100%);
   height: 80px;
+}
+
+.articles .btn {
+  color: #fff;
+}
+
+.h {
+  width: 120px;
+  object-fit: cover;
+  height: 146px !important;
+}
+
+@media screen and (max-width: 590px) {
+  .h {
+    width: 100%;
+    object-fit: cover;
+    height: 150px !important;
+  }
 }

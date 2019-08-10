@@ -242,14 +242,18 @@ footer {
   .matches .top h4 {
     color: #737372;
     font-size: 20px; }
+  .matches .center .d-flex {
+    justify-content: center; }
   .matches .center img {
-    width: calc(100%/3); }
+    width: 45px;
+    height: 45px; }
   .matches .center p {
     color: #fff; }
   .matches .center .badge {
     font-size: 90%;
     font-size: 90%;
-    font-weight: 500; }
+    font-weight: 500;
+    width: 60px; }
   .matches .bottom .badge {
     background: transparent;
     border: 1px solid #FFB946;
