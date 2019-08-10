@@ -25,6 +25,12 @@
                 margin-bottom: 30px;
             }
         }
+        .modal-content {
+            background-color: #0000000d;
+            .modal-body {
+                background-color: #0000000d;
+            }
+        }
         @media screen and (max-width: 590px) {
             .col-md-3 {
                 padding: 0 15px 0 15px;

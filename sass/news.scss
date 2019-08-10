@@ -11,5 +11,30 @@
     }
     
     .news {
-        @include cards;
+        margin-bottom: 25px;
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: #000;
+            .card {
+                @include cards;
+            }
+        }
+        .btn {
+            color: #fff;
+        }
+    }
+    
+    .h {
+        width: 120px;
+        object-fit: cover;
+        height: 146px !important;
+    }
+    
+    @media screen and (max-width: 590px) {
+        .h {
+            width: 100%;
+            object-fit: cover;
+            height: 150px !important;
+        }
     }

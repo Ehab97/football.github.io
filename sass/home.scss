@@ -46,8 +46,12 @@
         }
     }
     .center {
+        .d-flex {
+            justify-content: center;
+        }
         img {
-            width: calc(100%/3);
+            width: 45px;
+            height: 45px;
         }
         p {
             color: #fff;
@@ -56,6 +60,7 @@
             font-size: 90%;
             font-size: 90%;
             font-weight: 500;
+            width: 60px;
         }
     }
     .bottom {

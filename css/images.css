@@ -234,6 +234,10 @@ footer {
   height: calc(100%);
   object-fit: cover;
   margin-bottom: 30px; }
+.images .modal-content {
+  background-color: #0000000d; }
+  .images .modal-content .modal-body {
+    background-color: #0000000d; }
 @media screen and (max-width: 590px) {
   .images .col-md-3 {
     padding: 0 15px 0 15px;
