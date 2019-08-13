@@ -348,10 +348,12 @@ footer {
     background: $mc !important;
     padding: 25px 0;
     background: #181817 !important;
-    padding: 25px 0;
-    position: absolute;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
+    color: white;
+    text-align: center;
     p {
         color: #fff;
         margin: 0;
