@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic,latin-ext");
+html {
+  position: relative;
+  min-height: 100%; }
+
 body {
   font-family: 'Cairo', 'Tajawal', sans-serif;
   direction: rtl;
-  background-color: #FEFEFE; }
+  background-color: #FEFEFE;
+  margin: 0 0 80px;
+  /* bottom = footer height */ }
 
 .bg-dark {
   background: #181817 !important; }
@@ -407,12 +413,11 @@ footer {
   background: #181817 !important;
   padding: 25px 0;
   background: #181817 !important;
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center; }
+  height: 80px;
+  width: 100%; }
   footer p {
     color: #fff;
     margin: 0; }
