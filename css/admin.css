@@ -405,7 +405,12 @@ table {
 
 footer {
   background: #181817 !important;
-  padding: 25px 0; }
+  padding: 25px 0;
+  background: #181817 !important;
+  padding: 25px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
   footer p {
     color: #fff;
     margin: 0; }

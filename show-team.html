@@ -28,14 +28,39 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="create-player.html">اللاعبين</a>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="create-player.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                اللاعبين
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="view-players.html">عرض اللاعبين</a>
+                                <a class="dropdown-item" href="show-player.html">عرض بيانات اللاعبين</a>
+                                <a class="dropdown-item" href="modfy-player.html">تعديل</a>
+                            </div>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="create-team.html">الفرق</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="create-team.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              الفرق
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="show-team.html">عرض الفرق</a>
+                                <a class="dropdown-item" href="view-teams.html">عرض بيانات الفرق</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="modfy-team.html" class="dropdown-item">تعديل الفرق</a>
+                                <a href="team-add.html" class="dropdown-item"> اضافة الاحصائيات</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="create-champ.html">البطولات</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="create-champ.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              البطولات
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="show-champ.html">عرض البطوله</a>
+                                <a class="dropdown-item" href="view-champions.html">عرض بيانات البطولات</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="chapions-stages-manuel.html" class="dropdown-item">تعديل البطوله</a>
+                                <a href="chapions-stages-dynamic.html" class="dropdown-item"> ادوار اللطوله </a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="login.html">تسجيل الخروج <i class="fa fa-user-circle-o ml-2"></i></a>
@@ -45,8 +70,7 @@
                 </div>
 
             </div>
-        </nav>
-        <!-- selection process -->
+        </nav <!-- selection process -->
         <div class="select team ">
             <div class="container">
                 <div class="row">
