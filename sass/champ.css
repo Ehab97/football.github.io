@@ -756,15 +756,35 @@ footer ul li a:hover {
   font-size: 20px;
 }
 
+@media screen and (max-width: 1366px) {
+  .stas .card {
+    min-width: 110px;
+  }
+  .cards a .card .card-img,
+  .cards a .card img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .matches .card .card-img-top {
     min-height: 80px !important;
     min-width: 80px !important;
+    object-fit: cover;
   }
   .matches .card h5,
   .matches .card p {
     font-size: 9px;
     font-weight: 900;
+  }
+  .stas .card {
+    min-width: 110px;
+  }
+  .cards a .card .card-img,
+  .cards a .card img {
+    height: 100%;
+    object-fit: cover;
   }
 }
 

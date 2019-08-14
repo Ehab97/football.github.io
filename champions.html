@@ -191,8 +191,8 @@
                                         </div>
                                     </div>
                                     <div class="col-12" v-show="g1">
-                                        <div class="stage" style="overflow-x:auto;" v-for="(j,l) in 8" ::key="j">
-                                            <h5 class="mt-4 mb-4">المجموعه {{j}}</h5>
+                                        <div class="stage" style="overflow-x:auto;" v-for="(j,l) in 8">
+                                            <h5 class="mt-4 mb-4" ::key="j">المجموعه {{j}}</h5>
                                             <table class="table table-striped">
                                                 <thead class="bg-dark">
                                                     <tr>
@@ -206,8 +206,8 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr v-for="(i,m) in 4" ::key="i">
-                                                        <th scope="row">{{i}}</th>
+                                                    <tr v-for="(i,m) in 4">
+                                                        <th ::key="i" scope="row">{{i}}</th>
                                                         <td>الاهلي</td>
                                                         <td>0</td>
                                                         <td>0</td>
@@ -269,11 +269,11 @@
                                     </div>
                                     <div class="col-12 sta stas" v-show="g3">
                                         <div class="row">
-                                            <div class="col-md-4 col-xs-12" v-for="(item,index) in arr" ::key="index">
+                                            <div class="col-md-4 col-xs-12" v-for="(item,index) in arr">
                                                 <div class="card">
                                                     <img src="imgaes/news/new1.jpg" class="card-img-top" alt="">
                                                     <div class="card-body">
-                                                        <h5 class="card-title">{{item}}</h5>
+                                                        <h5 class="card-title" ::key="item">{{item}}</h5>
                                                         <p class="card-text">22</p>
                                                     </div>
                                                 </div>
@@ -292,11 +292,11 @@
                                     </div>
                                     <div class="col-12 sta" v-show="g3">
                                         <div class="row text-center">
-                                            <div class="col-md-3 col-xs-12" v-for="(i,n) in 4" ::key="i">
+                                            <div class="col-md-3 col-xs-12" v-for="(i,n) in 4">
                                                 <div class="card">
                                                     <img src="imgaes/about/iconfinder_user_male2_172626.png" class="card-img-top" alt="...">
                                                     <div class="card-body">
-                                                        <h5 class="card-title">اسم الاعب</h5>
+                                                        <h5 class="card-title" ::key="i"> {{i}}-اسم الاعب</h5>
                                                         <p class="card-text">اسم النادي</p>
                                                         <p class="card-text">25 هدف</p>
 
@@ -318,11 +318,11 @@
                                     </div>
                                     <div class="col-12 sta" v-show="g3">
                                         <div class="row text-center">
-                                            <div class="col-md-3 col-xs-12" v-for="(i,n) in 4" ::key="i">
+                                            <div class="col-md-3 col-xs-12" v-for="(i,n) in 4">
                                                 <div class="card">
                                                     <img src="imgaes/about/iconfinder_user_male2_172626.png" class="card-img-top" alt="...">
                                                     <div class="card-body">
-                                                        <h5 class="card-title">اسم الاعب</h5>
+                                                        <h5 class="card-title" ::key="i">{{i}}-اسم الاعب</h5>
                                                         <p class="card-text">اسم النادي</p>
                                                         <p class="card-text"> 5 مباريات</p>
 
