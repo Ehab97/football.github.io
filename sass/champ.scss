@@ -213,15 +213,35 @@
         }
     }
     
+    @media screen and ( max-width: 1366px) {
+        .stas .card {
+            min-width: 110px;
+        }
+        .cards a .card .card-img,
+        .cards a .card img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
     @media screen and ( max-width: 1024px) {
         .matches .card .card-img-top {
             min-height: 80px $im;
             min-width: 80px $im;
+            object-fit: cover;
         }
         .matches .card h5,
         .matches .card p {
             font-size: 9px;
             font-weight: 900;
+        }
+        .stas .card {
+            min-width: 110px;
+        }
+        .cards a .card .card-img,
+        .cards a .card img {
+            height: 100%;
+            object-fit: cover;
         }
     }
     
