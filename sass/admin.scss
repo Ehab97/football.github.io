@@ -2,11 +2,25 @@
 @import url('https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic,latin-ext');
 @import 'variables';
 @import 'mixins';
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font-family: 'Cairo', 'Tajawal', sans-serif;
     direction: rtl;
     background-color: #FEFEFE;
+    margin: 0 0 80px;
+    /* bottom = footer height */
+    // min-height:100%; 
+    // position:relative; 
+    // padding-bottom:[footer-height] 
+    //     height: 100%;
+    //   margin: 0;
 }
+
+#app {}
 
 //navbar->header
 .bg-dark {
@@ -347,6 +361,18 @@ table {
 footer {
     background: $mc !important;
     padding: 25px 0;
+    background: #181817 !important;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    // position: fixed;
+    // left: 0;
+    // bottom: 0;
+    // width: 100%;
+    // color: white;
+    // text-align: center;
     p {
         color: #fff;
         margin: 0;

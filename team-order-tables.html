@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
-    <link rel="stylesheet" href="css/videos.css">
+    <link rel="stylesheet" href="css/champ.css">
     <link rel="shortcut icon" href="images/favicon/logo.png">
-    <title>الفيديوهات</title>
+    <title>اسم البطوله</title>
 </head>
 
 <body class="container">
@@ -26,8 +26,8 @@
             </div>
             <a class="navbar-brand" href="home.html">KSAKORA</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                                                    <span class="navbar-toggler-icon"></span>
-                                                        </button>
+                            <span class="navbar-toggler-icon"></span>
+                </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -75,67 +75,65 @@
         <div class="heading">
             <div class="row">
                 <div class="col-2">
-                    <h4>الفيدوهات</h4>
+                    <h4>ترتيب الفرق في الاسم </h4>
                 </div>
                 <div class="col-10">
                     <hr/>
                 </div>
             </div>
         </div>
-        <div class="video">
+        <section class="cards">
             <div class="row">
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-md-3 col-xs-12" v-for="i in 12" ::key="i">
-                            <div class="example-2 card">
-                                <div class="wrapper">
-                                    <video controls>
-                                      <source src="" type="video/mp4">
-                                      <source src="" type="video/ogg">
-                                      Your browser does not support the video tag.
-                                    </video>
-                                    <div class="header">
-                                        <div class="date">
-                                            <span class="day">12</span>
-                                            <span class="month">محرم</span>
-                                            <span class="year">1440</span>
-                                        </div>
-                                        <ul class="menu-content">
-                                            <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
-                                            <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="data">
-                                        <div class="content">
-                                            <h1 class="title text-center" style="font-size: 20px;"><a href="#">انتقال دي يونج للبرسا</a></h1>
-                                            <button type="button" class="button" data-toggle="modal" data-target="#exampleModal">مشاهدة الفيديو</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <a class="btn btn-dark" href="#">مشاهدة المزيد</a>
-                        </div>
+
                         <div class="col-12">
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" id="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                   <span aria-hidden="true" style="font-size: 40px;color:#fff;">&times;
-                                                   </span>
-                                            </button>
+                            <div class="stages">
+                                <div class="row">
+
+                                    <div class="col-12">
+                                        <div class="stage" style="overflow-x:auto;">
+
+                                            <table class="table table-light table-striped table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">اسم الفريق</th>
+                                                        <th scope="col">المباريات</th>
+                                                        <th scope="col">النقاط</th>
+                                                        <th scope="col">له</th>
+                                                        <th scope="col">عليه</th>
+                                                        <th scope="col">الاهداف</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr v-for="(i,m) in 10" ::key="i">
+                                                        <th scope="row">{{i}}</th>
+                                                        <td>الاهلي</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
                                         </div>
-                                        <div class="modal-body">
-                                            <video controls>
-                            <source src="" type="video/mp4">
-                            <source src="" type="video/ogg">
-                            Your browser does not support the video tag.
-                          </video>
-                                        </div>
+
                                     </div>
+                                    <div class="col-12">
+                                        <nav aria-label="Page navigation example" style="direction: ltr;">
+                                            <ul class="pagination justify-content-center mt-3">
+                                                <li class="page-item"><a style="color: #000;" class="page-link" href="#">السابق</a></li>
+                                                <li class="page-item"><a style="color: #000;" class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a style="color: #000;" class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a style="color: #000;" class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a style="color: #000;" class="page-link" href="#">التالي</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -143,8 +141,7 @@
                 </div>
             </div>
 
-        </div>
-        <!-- pop up ads -->
+        </section>
         <footer id="footer">
             <div class="row">
                 <div class="col-12 col-xs-12  m-auto text-center">
@@ -190,8 +187,8 @@
                 </div>
             </div>
         </footer>
-
     </main>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
