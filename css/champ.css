@@ -95,6 +95,9 @@ body {
   footer form {
     width: 95%; }
 
+  footer ul li a {
+    margin-right: 0pc !important; }
+
   .h {
     width: 100%;
     height: 100% !important; } }
@@ -144,7 +147,8 @@ footer {
       margin-left: 15px; }
       footer ul li a {
         text-decoration: none;
-        color: #737372; }
+        color: #737372;
+        margin-right: 1pc; }
         footer ul li a:hover {
           color: #fff;
           transition: .3s ease-in; }
@@ -214,7 +218,7 @@ footer {
     transform: rotate(45deg) translate(-8px, -8px); }
 
 .cards {
-  margin: 40px 0; }
+  margin: 20px 0; }
   .cards .ads {
     margin: 25px 0; }
   .cards .badge {
