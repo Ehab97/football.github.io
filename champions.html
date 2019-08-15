@@ -271,7 +271,7 @@
                                         <div class="row">
                                             <div class="col-md-4 col-xs-12" v-for="(item,index) in arr">
                                                 <div class="card">
-                                                    <img src="imgaes/news/new1.jpg" class="card-img-top" alt="">
+                                                    <img ::key="img" :src="'imgaes/statsics/'+images[index]+'.jpg'" class="card-img-top" alt="">
                                                     <div class="card-body">
                                                         <h5 class="card-title" ::key="item">{{item}}</h5>
                                                         <p class="card-text">22</p>
