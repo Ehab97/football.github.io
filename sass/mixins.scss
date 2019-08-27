@@ -5,6 +5,11 @@
         font-family: $fp, fs;
         direction: rtl;
     }
+    @media screen and (max-width: 1366px) {
+        .bg-dark .nav-item .nav-link {
+            font-size: 15px;
+        }
+    }
     .h {
         width: 205px;
         height: 145px $im;
@@ -249,16 +254,16 @@
         .bar1,
         .bar2,
         .bar3 {
-            width: 35px;
+            width: 40px;
             height: 5px;
             background-color: $tc;
-            margin: 6px 0;
+            margin: 10px 0;
             transition: 0.4s;
         }
     }
     .change .bar1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-12px, 12px);
     }
     .change .bar2 {
         opacity: 0;

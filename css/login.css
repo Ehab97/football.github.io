@@ -5,6 +5,9 @@ body {
   font-family: "Cairo", fs;
   direction: rtl; }
 
+@media screen and (max-width: 1366px) {
+  .bg-dark .nav-item .nav-link {
+    font-size: 15px; } }
 .h {
   width: 205px;
   height: 145px !important; }
